@@ -11,7 +11,6 @@
 #import <AVFoundation/AVFoundation.h>
 @class ZZQRCodeManager;
 
-
 @protocol ZZQRCodeManagerDelegate <NSObject>
 
 /**

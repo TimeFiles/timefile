@@ -16,6 +16,7 @@
 		6E389D0E1F384E01008D0762 /* ZZQRCodeScanningView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E389D0A1F384E01008D0762 /* ZZQRCodeScanningView.m */; };
 		6E389D0F1F384E01008D0762 /* ZZQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E389D0C1F384E01008D0762 /* ZZQRCodeViewController.m */; };
 		6E5510351F38584800CC0543 /* sound.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6E5510341F38584800CC0543 /* sound.caf */; };
+		6E6339F81F66813700A88B2B /* ZZQRCodeFinallyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6339F71F66813700A88B2B /* ZZQRCodeFinallyViewController.m */; };
 		6EFD5BA41F611F8A00FA20CE /* ZZQRCodeTableviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFD5BA31F611F8A00FA20CE /* ZZQRCodeTableviewController.m */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,9 @@
 		6E389D0B1F384E01008D0762 /* ZZQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQRCodeViewController.h; sourceTree = "<group>"; };
 		6E389D0C1F384E01008D0762 /* ZZQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQRCodeViewController.m; sourceTree = "<group>"; };
 		6E5510341F38584800CC0543 /* sound.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound.caf; sourceTree = "<group>"; };
+		6E6339F51F6678E000A88B2B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		6E6339F61F66813700A88B2B /* ZZQRCodeFinallyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQRCodeFinallyViewController.h; sourceTree = "<group>"; };
+		6E6339F71F66813700A88B2B /* ZZQRCodeFinallyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQRCodeFinallyViewController.m; sourceTree = "<group>"; };
 		6EFD5BA21F611F8A00FA20CE /* ZZQRCodeTableviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQRCodeTableviewController.h; sourceTree = "<group>"; };
 		6EFD5BA31F611F8A00FA20CE /* ZZQRCodeTableviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQRCodeTableviewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,11 +83,14 @@
 				6E389D0A1F384E01008D0762 /* ZZQRCodeScanningView.m */,
 				6E389D0B1F384E01008D0762 /* ZZQRCodeViewController.h */,
 				6E389D0C1F384E01008D0762 /* ZZQRCodeViewController.m */,
+				6E6339F61F66813700A88B2B /* ZZQRCodeFinallyViewController.h */,
+				6E6339F71F66813700A88B2B /* ZZQRCodeFinallyViewController.m */,
 				6E5510341F38584800CC0543 /* sound.caf */,
 				6E389CF91F384D90008D0762 /* Main.storyboard */,
 				6E389CFC1F384D90008D0762 /* Assets.xcassets */,
 				6E389CFE1F384D90008D0762 /* LaunchScreen.storyboard */,
 				6E389D011F384D90008D0762 /* Info.plist */,
+				6E6339F51F6678E000A88B2B /* PrefixHeader.pch */,
 				6E389CF01F384D90008D0762 /* Supporting Files */,
 			);
 			path = ZZQRCode;
@@ -175,6 +182,7 @@
 				6E389CF51F384D90008D0762 /* AppDelegate.m in Sources */,
 				6E389D0E1F384E01008D0762 /* ZZQRCodeScanningView.m in Sources */,
 				6E389CF21F384D90008D0762 /* main.m in Sources */,
+				6E6339F81F66813700A88B2B /* ZZQRCodeFinallyViewController.m in Sources */,
 				6EFD5BA41F611F8A00FA20CE /* ZZQRCodeTableviewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,8 +238,11 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -278,7 +289,10 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -298,6 +312,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5MT9S95PUC;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZZQRCode/PrefixHeader.pch";
 				INFOPLIST_FILE = ZZQRCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhangpeng.ZZQRCode;
@@ -310,6 +326,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5MT9S95PUC;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZZQRCode/PrefixHeader.pch";
 				INFOPLIST_FILE = ZZQRCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhangpeng.ZZQRCode;

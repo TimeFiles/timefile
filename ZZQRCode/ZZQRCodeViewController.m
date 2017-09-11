@@ -9,6 +9,7 @@
 #import "ZZQRCodeViewController.h"
 #import "ZZQRCodeScanningView.h"
 #import "ZZQRCodeManager.h"
+#import "ZZQRCodeFinallyViewController.h"
 
 @interface ZZQRCodeViewController ()
 <
@@ -111,8 +112,10 @@
         
         AVMetadataMachineReadableCodeObject *obj = metadataObjects[0];
         NSLog(@"扫描的结果是%@", [obj stringValue]);
-//        NSString *str = [obj stringValue];
-
+        ZZQRCodeFinallyViewController *finallyVC = [[ZZQRCodeFinallyViewController alloc] init];
+        finallyVC.titleLabelStr = [obj stringValue];
+        [self.navigationController pushViewController:finallyVC animated:YES];
+        
     }
 }
 
