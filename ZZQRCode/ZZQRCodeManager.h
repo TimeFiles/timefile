@@ -13,13 +13,7 @@
 
 @protocol ZZQRCodeManagerDelegate <NSObject>
 
-/**
- *  delegate(扫描二维码获取数据的方法)
- *
- *  @param manager    ZZQRCodeManager
- *  @param metadataObjects    数据信息
- */
-
+//扫描二维码
 - (void)manager:(ZZQRCodeManager *)manager didOutputMetadataObjects:(NSArray *)metadataObjects;
 
 /**
@@ -29,15 +23,18 @@
  *  @param picker    UIImagePickerController
  *  @param info    获取图片信息
  */
-//- (void)manager:(ZZQRCodeManager *)manager imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info;
-//
-///**
-// *  delegate(imagePickerControllerDidCancel)
-// *
-// *  @param manager    SGQRCodeManager
-// *  @param picker    UIImagePickerController
-// */
-//- (void)manager:(ZZQRCodeManager *)manager imagePickerControllerDidCancel:(UIImagePickerController *)picker;
+
+- (void)manager:(ZZQRCodeManager *)manager imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info;
+
+
+/**
+ *  delegate(imagePickerControllerDidCancel)
+ *
+ *  @param manager    SGQRCodeManager
+ *  @param picker    UIImagePickerController
+ */
+
+- (void)manager:(ZZQRCodeManager *)manager imagePickerControllerDidCancel:(UIImagePickerController *)picker;
 
 @end
 

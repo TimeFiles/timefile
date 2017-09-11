@@ -7,6 +7,7 @@
 //
 
 #import "ZZQRCodeTableviewController.h"
+#import "ZZQRCodeImageViewController.h"
 
 @interface ZZQRCodeTableviewController ()
 <
@@ -29,7 +30,7 @@ UITableViewDataSource
     [self.view addSubview:self.tableView];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.dateArr = [NSMutableArray arrayWithObjects:@"点击进入到扫一扫", nil];
+    self.dateArr = [NSMutableArray arrayWithObjects:@"点击进入到扫一扫",@"输入文字或图片生成二维码", nil];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
 }
 
@@ -57,7 +58,7 @@ UITableViewDataSource
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    [self loadLimits];
+    [self loadLimitsAndIndexPath:indexPath.row];
     
     if (indexPath.row == 0) {
       
@@ -69,8 +70,8 @@ UITableViewDataSource
 }
 
 //加载访问权限
-- (void) loadLimits{
-    
+- (void) loadLimitsAndIndexPath:(NSInteger)index{
+    NSLog(@"---------index===%zd",index);
     AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
     if (device) {
         AVAuthorizationStatus status = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
@@ -78,23 +79,21 @@ UITableViewDataSource
             [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
                 if (granted) {
                     dispatch_async(dispatch_get_main_queue(), ^{
-                        ZZQRCodeViewController *mQRCodeController = [[ZZQRCodeViewController alloc] init];
-                        [self.navigationController pushViewController:mQRCodeController animated:YES];
+                        
+                        [self whereAreYouGoing:index];
                     });
-                    
                     NSLog(@"当前线程 - - %@", [NSThread currentThread]);
                     // 用户第一次同意了访问相机权限
                     NSLog(@"用户第一次同意了访问相机权限");
                 } else {
-                    
                     // 用户第一次拒绝了访问相机权限
                     NSLog(@"用户第一次拒绝了访问相机权限");
                 }
             }];
         } else if (status == AVAuthorizationStatusAuthorized) { // 用户允许当前应用访问相机
             NSLog(@"用户允许当前应用访问相机");
-            ZZQRCodeViewController *mQRCodeController = [[ZZQRCodeViewController alloc] init];
-            [self.navigationController pushViewController:mQRCodeController animated:YES];
+            [self whereAreYouGoing:index];
+            
         } else if (status == AVAuthorizationStatusDenied) { // 用户拒绝当前应用访问相机
             UIAlertController *alertC = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"请去-> [设置 - 隐私 - 相机 - 盈科旅游] 打开访问开关" preferredStyle:(UIAlertControllerStyleAlert)];
             UIAlertAction *alertA = [UIAlertAction actionWithTitle:@"确定" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
@@ -113,6 +112,20 @@ UITableViewDataSource
         [self presentViewController:alertC animated:YES completion:nil];
     }
 }
+
+- (void)whereAreYouGoing:(NSInteger)index {
+
+    if (index == 0) {
+        ZZQRCodeViewController *ZZQRCodeVC = [[ZZQRCodeViewController alloc] init];
+        [self.navigationController pushViewController:ZZQRCodeVC animated:YES];
+        
+    }else if (index == 1)
+    {
+        ZZQRCodeImageViewController *ZZQRCodeImageVC = [[ZZQRCodeImageViewController alloc] init];
+        [self.navigationController pushViewController:ZZQRCodeImageVC animated:YES];
+    }
+}
+
 
 - (UITableView *)tableView {
     
