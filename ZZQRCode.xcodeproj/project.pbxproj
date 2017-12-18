@@ -12,12 +12,13 @@
 		6E389CFB1F384D90008D0762 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E389CF91F384D90008D0762 /* Main.storyboard */; };
 		6E389CFD1F384D90008D0762 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E389CFC1F384D90008D0762 /* Assets.xcassets */; };
 		6E389D001F384D90008D0762 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E389CFE1F384D90008D0762 /* LaunchScreen.storyboard */; };
-		6E389D0D1F384E01008D0762 /* ZZQRCodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E389D081F384E01008D0762 /* ZZQRCodeManager.m */; };
-		6E389D0E1F384E01008D0762 /* ZZQRCodeScanningView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E389D0A1F384E01008D0762 /* ZZQRCodeScanningView.m */; };
-		6E389D0F1F384E01008D0762 /* ZZQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E389D0C1F384E01008D0762 /* ZZQRCodeViewController.m */; };
+		6E4B04971FD6A46D006B25E6 /* ZZQRCodeFinallyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B048D1FD6A46C006B25E6 /* ZZQRCodeFinallyViewController.m */; };
+		6E4B04981FD6A46D006B25E6 /* ZZQRCodeImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B048E1FD6A46C006B25E6 /* ZZQRCodeImageViewController.m */; };
+		6E4B04991FD6A46D006B25E6 /* ZZQRCodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B04931FD6A46C006B25E6 /* ZZQRCodeManager.m */; };
+		6E4B049A1FD6A46D006B25E6 /* ZZQRCodeScanningView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B04941FD6A46C006B25E6 /* ZZQRCodeScanningView.m */; };
+		6E4B049B1FD6A46D006B25E6 /* ZZQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B04961FD6A46D006B25E6 /* ZZQRCodeViewController.m */; };
+		6E4B049E1FD6A482006B25E6 /* NSTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B049D1FD6A482006B25E6 /* NSTimerViewController.m */; };
 		6E5510351F38584800CC0543 /* sound.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6E5510341F38584800CC0543 /* sound.caf */; };
-		6E6339F81F66813700A88B2B /* ZZQRCodeFinallyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6339F71F66813700A88B2B /* ZZQRCodeFinallyViewController.m */; };
-		6E6339FB1F668A3200A88B2B /* ZZQRCodeImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6339FA1F668A3200A88B2B /* ZZQRCodeImageViewController.m */; };
 		6EFD5BA41F611F8A00FA20CE /* ZZQRCodeTableviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFD5BA31F611F8A00FA20CE /* ZZQRCodeTableviewController.m */; };
 /* End PBXBuildFile section */
 
@@ -30,18 +31,20 @@
 		6E389CFC1F384D90008D0762 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E389CFF1F384D90008D0762 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E389D011F384D90008D0762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6E389D071F384E01008D0762 /* ZZQRCodeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQRCodeManager.h; sourceTree = "<group>"; };
-		6E389D081F384E01008D0762 /* ZZQRCodeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQRCodeManager.m; sourceTree = "<group>"; };
-		6E389D091F384E01008D0762 /* ZZQRCodeScanningView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQRCodeScanningView.h; sourceTree = "<group>"; };
-		6E389D0A1F384E01008D0762 /* ZZQRCodeScanningView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQRCodeScanningView.m; sourceTree = "<group>"; };
-		6E389D0B1F384E01008D0762 /* ZZQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQRCodeViewController.h; sourceTree = "<group>"; };
-		6E389D0C1F384E01008D0762 /* ZZQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQRCodeViewController.m; sourceTree = "<group>"; };
+		6E4B048D1FD6A46C006B25E6 /* ZZQRCodeFinallyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQRCodeFinallyViewController.m; sourceTree = "<group>"; };
+		6E4B048E1FD6A46C006B25E6 /* ZZQRCodeImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQRCodeImageViewController.m; sourceTree = "<group>"; };
+		6E4B048F1FD6A46C006B25E6 /* ZZQRCodeImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQRCodeImageViewController.h; sourceTree = "<group>"; };
+		6E4B04901FD6A46C006B25E6 /* ZZQRCodeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQRCodeManager.h; sourceTree = "<group>"; };
+		6E4B04911FD6A46C006B25E6 /* ZZQRCodeFinallyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQRCodeFinallyViewController.h; sourceTree = "<group>"; };
+		6E4B04921FD6A46C006B25E6 /* ZZQRCodeScanningView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQRCodeScanningView.h; sourceTree = "<group>"; };
+		6E4B04931FD6A46C006B25E6 /* ZZQRCodeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQRCodeManager.m; sourceTree = "<group>"; };
+		6E4B04941FD6A46C006B25E6 /* ZZQRCodeScanningView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQRCodeScanningView.m; sourceTree = "<group>"; };
+		6E4B04951FD6A46C006B25E6 /* ZZQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQRCodeViewController.h; sourceTree = "<group>"; };
+		6E4B04961FD6A46D006B25E6 /* ZZQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQRCodeViewController.m; sourceTree = "<group>"; };
+		6E4B049C1FD6A482006B25E6 /* NSTimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTimerViewController.h; sourceTree = "<group>"; };
+		6E4B049D1FD6A482006B25E6 /* NSTimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTimerViewController.m; sourceTree = "<group>"; };
 		6E5510341F38584800CC0543 /* sound.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound.caf; sourceTree = "<group>"; };
 		6E6339F51F6678E000A88B2B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		6E6339F61F66813700A88B2B /* ZZQRCodeFinallyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQRCodeFinallyViewController.h; sourceTree = "<group>"; };
-		6E6339F71F66813700A88B2B /* ZZQRCodeFinallyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQRCodeFinallyViewController.m; sourceTree = "<group>"; };
-		6E6339F91F668A3200A88B2B /* ZZQRCodeImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQRCodeImageViewController.h; sourceTree = "<group>"; };
-		6E6339FA1F668A3200A88B2B /* ZZQRCodeImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQRCodeImageViewController.m; sourceTree = "<group>"; };
 		6EFD5BA21F611F8A00FA20CE /* ZZQRCodeTableviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQRCodeTableviewController.h; sourceTree = "<group>"; };
 		6EFD5BA31F611F8A00FA20CE /* ZZQRCodeTableviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQRCodeTableviewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,16 +83,8 @@
 				6E389CF41F384D90008D0762 /* AppDelegate.m */,
 				6EFD5BA21F611F8A00FA20CE /* ZZQRCodeTableviewController.h */,
 				6EFD5BA31F611F8A00FA20CE /* ZZQRCodeTableviewController.m */,
-				6E389D071F384E01008D0762 /* ZZQRCodeManager.h */,
-				6E389D081F384E01008D0762 /* ZZQRCodeManager.m */,
-				6E389D091F384E01008D0762 /* ZZQRCodeScanningView.h */,
-				6E389D0A1F384E01008D0762 /* ZZQRCodeScanningView.m */,
-				6E389D0B1F384E01008D0762 /* ZZQRCodeViewController.h */,
-				6E389D0C1F384E01008D0762 /* ZZQRCodeViewController.m */,
-				6E6339F61F66813700A88B2B /* ZZQRCodeFinallyViewController.h */,
-				6E6339F71F66813700A88B2B /* ZZQRCodeFinallyViewController.m */,
-				6E6339F91F668A3200A88B2B /* ZZQRCodeImageViewController.h */,
-				6E6339FA1F668A3200A88B2B /* ZZQRCodeImageViewController.m */,
+				6E4B048C1FD6A44B006B25E6 /* ZZQRCode */,
+				6E4B048B1FD6A431006B25E6 /* NSTimer */,
 				6E5510341F38584800CC0543 /* sound.caf */,
 				6E389CF91F384D90008D0762 /* Main.storyboard */,
 				6E389CFC1F384D90008D0762 /* Assets.xcassets */,
@@ -108,6 +103,33 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		6E4B048B1FD6A431006B25E6 /* NSTimer */ = {
+			isa = PBXGroup;
+			children = (
+				6E4B049C1FD6A482006B25E6 /* NSTimerViewController.h */,
+				6E4B049D1FD6A482006B25E6 /* NSTimerViewController.m */,
+			);
+			path = NSTimer;
+			sourceTree = "<group>";
+		};
+		6E4B048C1FD6A44B006B25E6 /* ZZQRCode */ = {
+			isa = PBXGroup;
+			children = (
+				6E4B04911FD6A46C006B25E6 /* ZZQRCodeFinallyViewController.h */,
+				6E4B048D1FD6A46C006B25E6 /* ZZQRCodeFinallyViewController.m */,
+				6E4B048F1FD6A46C006B25E6 /* ZZQRCodeImageViewController.h */,
+				6E4B048E1FD6A46C006B25E6 /* ZZQRCodeImageViewController.m */,
+				6E4B04901FD6A46C006B25E6 /* ZZQRCodeManager.h */,
+				6E4B04931FD6A46C006B25E6 /* ZZQRCodeManager.m */,
+				6E4B04921FD6A46C006B25E6 /* ZZQRCodeScanningView.h */,
+				6E4B04941FD6A46C006B25E6 /* ZZQRCodeScanningView.m */,
+				6E4B04951FD6A46C006B25E6 /* ZZQRCodeViewController.h */,
+				6E4B04961FD6A46D006B25E6 /* ZZQRCodeViewController.m */,
+			);
+			name = ZZQRCode;
+			path = ZZQRCode/ZZQRCode;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -182,13 +204,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E389D0D1F384E01008D0762 /* ZZQRCodeManager.m in Sources */,
-				6E389D0F1F384E01008D0762 /* ZZQRCodeViewController.m in Sources */,
 				6E389CF51F384D90008D0762 /* AppDelegate.m in Sources */,
-				6E389D0E1F384E01008D0762 /* ZZQRCodeScanningView.m in Sources */,
-				6E6339FB1F668A3200A88B2B /* ZZQRCodeImageViewController.m in Sources */,
 				6E389CF21F384D90008D0762 /* main.m in Sources */,
-				6E6339F81F66813700A88B2B /* ZZQRCodeFinallyViewController.m in Sources */,
+				6E4B04981FD6A46D006B25E6 /* ZZQRCodeImageViewController.m in Sources */,
+				6E4B049E1FD6A482006B25E6 /* NSTimerViewController.m in Sources */,
+				6E4B04991FD6A46D006B25E6 /* ZZQRCodeManager.m in Sources */,
+				6E4B049B1FD6A46D006B25E6 /* ZZQRCodeViewController.m in Sources */,
+				6E4B049A1FD6A46D006B25E6 /* ZZQRCodeScanningView.m in Sources */,
+				6E4B04971FD6A46D006B25E6 /* ZZQRCodeFinallyViewController.m in Sources */,
 				6EFD5BA41F611F8A00FA20CE /* ZZQRCodeTableviewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

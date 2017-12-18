@@ -8,6 +8,7 @@
 
 #import "ZZQRCodeTableviewController.h"
 #import "ZZQRCodeImageViewController.h"
+#import "NSTimerViewController.h"
 
 @interface ZZQRCodeTableviewController ()
 <
@@ -30,7 +31,7 @@ UITableViewDataSource
     [self.view addSubview:self.tableView];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.dateArr = [NSMutableArray arrayWithObjects:@"点击进入到扫一扫",@"输入文字或图片生成二维码", nil];
+    self.dateArr = [NSMutableArray arrayWithObjects:@"点击进入到扫一扫",@"输入文字或图片生成二维码",@"NSTimer", nil];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
 }
 
@@ -57,15 +58,16 @@ UITableViewDataSource
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    [self loadLimitsAndIndexPath:indexPath.row];
-    
+
     if (indexPath.row == 0) {
-      
-        
+      [self loadLimitsAndIndexPath:indexPath.row];
     }
     else if (indexPath.row == 1) {
         
+    }else if (indexPath.row == 2) {
+        
+        NSTimerViewController *next = [[NSTimerViewController alloc] init];
+        [self.navigationController pushViewController:next animated:YES];
     }
 }
 
