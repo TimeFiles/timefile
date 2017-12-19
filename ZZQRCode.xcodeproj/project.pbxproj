@@ -19,6 +19,8 @@
 		6E4B049B1FD6A46D006B25E6 /* ZZQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B04961FD6A46D006B25E6 /* ZZQRCodeViewController.m */; };
 		6E4B049E1FD6A482006B25E6 /* NSTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B049D1FD6A482006B25E6 /* NSTimerViewController.m */; };
 		6E5510351F38584800CC0543 /* sound.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6E5510341F38584800CC0543 /* sound.caf */; };
+		6E7C0D961FE9104C0097B587 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7C0D951FE9104C0097B587 /* GCDViewController.m */; };
+		6E7C0D991FE911CA0097B587 /* GCDTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7C0D981FE911CA0097B587 /* GCDTool.m */; };
 		6EFD5BA41F611F8A00FA20CE /* ZZQRCodeTableviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFD5BA31F611F8A00FA20CE /* ZZQRCodeTableviewController.m */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,10 @@
 		6E4B049D1FD6A482006B25E6 /* NSTimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTimerViewController.m; sourceTree = "<group>"; };
 		6E5510341F38584800CC0543 /* sound.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound.caf; sourceTree = "<group>"; };
 		6E6339F51F6678E000A88B2B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		6E7C0D941FE9104C0097B587 /* GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
+		6E7C0D951FE9104C0097B587 /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
+		6E7C0D971FE911CA0097B587 /* GCDTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDTool.h; sourceTree = "<group>"; };
+		6E7C0D981FE911CA0097B587 /* GCDTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDTool.m; sourceTree = "<group>"; };
 		6EFD5BA21F611F8A00FA20CE /* ZZQRCodeTableviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQRCodeTableviewController.h; sourceTree = "<group>"; };
 		6EFD5BA31F611F8A00FA20CE /* ZZQRCodeTableviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQRCodeTableviewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +89,7 @@
 				6E389CF41F384D90008D0762 /* AppDelegate.m */,
 				6EFD5BA21F611F8A00FA20CE /* ZZQRCodeTableviewController.h */,
 				6EFD5BA31F611F8A00FA20CE /* ZZQRCodeTableviewController.m */,
+				6E7C0D931FE9103C0097B587 /* GCD */,
 				6E4B048C1FD6A44B006B25E6 /* ZZQRCode */,
 				6E4B048B1FD6A431006B25E6 /* NSTimer */,
 				6E5510341F38584800CC0543 /* sound.caf */,
@@ -130,6 +137,17 @@
 			name = ZZQRCode;
 			path = ZZQRCode/ZZQRCode;
 			sourceTree = SOURCE_ROOT;
+		};
+		6E7C0D931FE9103C0097B587 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				6E7C0D941FE9104C0097B587 /* GCDViewController.h */,
+				6E7C0D951FE9104C0097B587 /* GCDViewController.m */,
+				6E7C0D971FE911CA0097B587 /* GCDTool.h */,
+				6E7C0D981FE911CA0097B587 /* GCDTool.m */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -204,9 +222,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E7C0D991FE911CA0097B587 /* GCDTool.m in Sources */,
 				6E389CF51F384D90008D0762 /* AppDelegate.m in Sources */,
 				6E389CF21F384D90008D0762 /* main.m in Sources */,
 				6E4B04981FD6A46D006B25E6 /* ZZQRCodeImageViewController.m in Sources */,
+				6E7C0D961FE9104C0097B587 /* GCDViewController.m in Sources */,
 				6E4B049E1FD6A482006B25E6 /* NSTimerViewController.m in Sources */,
 				6E4B04991FD6A46D006B25E6 /* ZZQRCodeManager.m in Sources */,
 				6E4B049B1FD6A46D006B25E6 /* ZZQRCodeViewController.m in Sources */,
