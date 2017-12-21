@@ -10,6 +10,7 @@
 #import "ZZQRCodeImageViewController.h"
 #import "NSTimerViewController.h"
 #import "GCDViewController.h"
+#import "TotalPriceExpensesViewController.h"
 
 @interface ZZQRCodeTableviewController ()
 <
@@ -32,47 +33,8 @@ UITableViewDataSource
     [self.view addSubview:self.tableView];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.dateArr = [NSMutableArray arrayWithObjects:@"点击进入到扫一扫",@"输入文字或图片生成二维码",@"NSTimer(验证码倒计时)",@"GCD(验证码倒计时)", nil];
+    self.dateArr = [NSMutableArray arrayWithObjects:@"点击进入到扫一扫",@"输入文字或图片生成二维码",@"NSTimer(验证码倒计时)",@"GCD(验证码倒计时)",@"TotalPriceExpenses(费用明细)", nil];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Table view data source
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.dateArr.count;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    cell.textLabel.text = self.dateArr[indexPath.row];
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    return cell;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 50;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-
-    if (indexPath.row == 0) {
-      [self loadLimitsAndIndexPath:indexPath.row];
-    }
-    else if (indexPath.row == 1) {
-        
-    }else if (indexPath.row == 2) {
-        
-        NSTimerViewController *next = [[NSTimerViewController alloc] init];
-        [self.navigationController pushViewController:next animated:YES];
-    }else if (indexPath.row == 3) {
-        GCDViewController *next = [[GCDViewController alloc] init];
-        [self.navigationController pushViewController:next animated:YES];
-    }
 }
 
 //加载访问权限
@@ -120,7 +82,7 @@ UITableViewDataSource
 }
 
 - (void)whereAreYouGoing:(NSInteger)index {
-
+    
     if (index == 0) {
         ZZQRCodeViewController *ZZQRCodeVC = [[ZZQRCodeViewController alloc] init];
         [self.navigationController pushViewController:ZZQRCodeVC animated:YES];
@@ -132,6 +94,48 @@ UITableViewDataSource
     }
 }
 
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Table view data source
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.dateArr.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    cell.textLabel.text = self.dateArr[indexPath.row];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 50;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    if (indexPath.row == 0) {
+      [self loadLimitsAndIndexPath:indexPath.row];
+    }
+    else if (indexPath.row == 1) {
+        
+    }else if (indexPath.row == 2) {
+        
+        NSTimerViewController *next = [[NSTimerViewController alloc] init];
+        [self.navigationController pushViewController:next animated:YES];
+    }else if (indexPath.row == 3) {
+        GCDViewController *next = [[GCDViewController alloc] init];
+        [self.navigationController pushViewController:next animated:YES];
+    }else if (indexPath.row == 4) {
+        TotalPriceExpensesViewController *next = [[TotalPriceExpensesViewController alloc] init];
+        [self.navigationController pushViewController:next animated:YES];
+    }
+}
 
 - (UITableView *)tableView {
     

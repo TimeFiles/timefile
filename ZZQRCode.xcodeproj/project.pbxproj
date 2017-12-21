@@ -21,6 +21,9 @@
 		6E5510351F38584800CC0543 /* sound.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6E5510341F38584800CC0543 /* sound.caf */; };
 		6E7C0D961FE9104C0097B587 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7C0D951FE9104C0097B587 /* GCDViewController.m */; };
 		6E7C0D991FE911CA0097B587 /* GCDTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7C0D981FE911CA0097B587 /* GCDTool.m */; };
+		6EF5150C1FEB7D4C00860625 /* TotalPriceExpensesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF5150B1FEB7D4C00860625 /* TotalPriceExpensesViewController.m */; };
+		6EF5150F1FEB7F8A00860625 /* TotalPriceExpensesTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF5150E1FEB7F8A00860625 /* TotalPriceExpensesTool.m */; };
+		6EF515121FEB888900860625 /* TotalPriceExpensesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF515111FEB888900860625 /* TotalPriceExpensesModel.m */; };
 		6EFD5BA41F611F8A00FA20CE /* ZZQRCodeTableviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFD5BA31F611F8A00FA20CE /* ZZQRCodeTableviewController.m */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +54,12 @@
 		6E7C0D951FE9104C0097B587 /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
 		6E7C0D971FE911CA0097B587 /* GCDTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDTool.h; sourceTree = "<group>"; };
 		6E7C0D981FE911CA0097B587 /* GCDTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDTool.m; sourceTree = "<group>"; };
+		6EF5150A1FEB7D4C00860625 /* TotalPriceExpensesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TotalPriceExpensesViewController.h; sourceTree = "<group>"; };
+		6EF5150B1FEB7D4C00860625 /* TotalPriceExpensesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TotalPriceExpensesViewController.m; sourceTree = "<group>"; };
+		6EF5150D1FEB7F8A00860625 /* TotalPriceExpensesTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TotalPriceExpensesTool.h; sourceTree = "<group>"; };
+		6EF5150E1FEB7F8A00860625 /* TotalPriceExpensesTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TotalPriceExpensesTool.m; sourceTree = "<group>"; };
+		6EF515101FEB888900860625 /* TotalPriceExpensesModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TotalPriceExpensesModel.h; sourceTree = "<group>"; };
+		6EF515111FEB888900860625 /* TotalPriceExpensesModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TotalPriceExpensesModel.m; sourceTree = "<group>"; };
 		6EFD5BA21F611F8A00FA20CE /* ZZQRCodeTableviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQRCodeTableviewController.h; sourceTree = "<group>"; };
 		6EFD5BA31F611F8A00FA20CE /* ZZQRCodeTableviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQRCodeTableviewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +98,7 @@
 				6E389CF41F384D90008D0762 /* AppDelegate.m */,
 				6EFD5BA21F611F8A00FA20CE /* ZZQRCodeTableviewController.h */,
 				6EFD5BA31F611F8A00FA20CE /* ZZQRCodeTableviewController.m */,
+				6EF515091FEB7D3600860625 /* TotalPriceExpenses */,
 				6E7C0D931FE9103C0097B587 /* GCD */,
 				6E4B048C1FD6A44B006B25E6 /* ZZQRCode */,
 				6E4B048B1FD6A431006B25E6 /* NSTimer */,
@@ -147,6 +157,19 @@
 				6E7C0D981FE911CA0097B587 /* GCDTool.m */,
 			);
 			path = GCD;
+			sourceTree = "<group>";
+		};
+		6EF515091FEB7D3600860625 /* TotalPriceExpenses */ = {
+			isa = PBXGroup;
+			children = (
+				6EF5150A1FEB7D4C00860625 /* TotalPriceExpensesViewController.h */,
+				6EF5150B1FEB7D4C00860625 /* TotalPriceExpensesViewController.m */,
+				6EF5150D1FEB7F8A00860625 /* TotalPriceExpensesTool.h */,
+				6EF5150E1FEB7F8A00860625 /* TotalPriceExpensesTool.m */,
+				6EF515101FEB888900860625 /* TotalPriceExpensesModel.h */,
+				6EF515111FEB888900860625 /* TotalPriceExpensesModel.m */,
+			);
+			path = TotalPriceExpenses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +255,9 @@
 				6E4B049B1FD6A46D006B25E6 /* ZZQRCodeViewController.m in Sources */,
 				6E4B049A1FD6A46D006B25E6 /* ZZQRCodeScanningView.m in Sources */,
 				6E4B04971FD6A46D006B25E6 /* ZZQRCodeFinallyViewController.m in Sources */,
+				6EF5150C1FEB7D4C00860625 /* TotalPriceExpensesViewController.m in Sources */,
+				6EF515121FEB888900860625 /* TotalPriceExpensesModel.m in Sources */,
+				6EF5150F1FEB7F8A00860625 /* TotalPriceExpensesTool.m in Sources */,
 				6EFD5BA41F611F8A00FA20CE /* ZZQRCodeTableviewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
