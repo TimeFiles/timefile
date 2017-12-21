@@ -11,12 +11,17 @@
 #import "TotalPriceExpensesModel.h"
 
 @interface TotalPriceExpensesViewController ()
+<
+    TotalPriceExpensesDelegate
+>
 
 @property (nonatomic,strong) UIView *toolBarView;
 
 @property (nonatomic,strong) UIButton *totalPriceExpensesBtn;
 
 @property (nonatomic,strong) TotalPriceExpensesModel *model;
+
+@property (nonatomic, assign) BOOL isSeleced;
 
 @end
 
@@ -27,7 +32,7 @@
     self.title = @"费用明细";
     self.view.backgroundColor = [UIColor whiteColor];
     [self loadToolBar];
-    
+    self.isSeleced = YES;
     self.model = [[TotalPriceExpensesModel alloc] init];
     self.model.title = @"标题";
 }
@@ -48,10 +53,22 @@
 
 - (void)totalPriceExpensesBtnClick:(UIButton *)sender {
     
-    [[TotalPriceExpensesTool sharedTotalPriceExpenses] showTotalPriceExpensesTool:self.model];
+    [TotalPriceExpensesTool sharedTotalPriceExpenses].delegate = self;
+    
+    if (self.isSeleced) {
+        [[TotalPriceExpensesTool sharedTotalPriceExpenses] showTotalPriceExpensesTool:self.model controller:self];
+        self.isSeleced = NO;
+    }else
+    {
+        [self totalPriceDetailBackViewDismiss];
+        self.isSeleced = YES;
+    }
 }
 
-
+- (void)totalPriceDetailBackViewDismiss {
+    self.isSeleced = YES;
+    NSLog(@"totalPriceDetailBackViewDismiss");
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
