@@ -155,7 +155,7 @@ static NSString *const headerId = @"headerId";
     
     TotalPriceEepensesCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
     cell.backgroundColor = [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1];
-    NSLog(@"indexPath.section --%zd",indexPath.section);
+    NSLog(@"indexPath.section --: %zd",indexPath.section);
     if (indexPath.section == 0) {
         if (indexPath.item == 0) {
             NSLog(@"indexPath.item --%zd",indexPath.item );
