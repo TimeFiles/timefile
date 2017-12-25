@@ -21,13 +21,19 @@
 		6E5510351F38584800CC0543 /* sound.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6E5510341F38584800CC0543 /* sound.caf */; };
 		6E7C0D961FE9104C0097B587 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7C0D951FE9104C0097B587 /* GCDViewController.m */; };
 		6E7C0D991FE911CA0097B587 /* GCDTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7C0D981FE911CA0097B587 /* GCDTool.m */; };
+		6E84D5EC1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E84D5EA1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.m */; };
+		6E84D5ED1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E84D5EB1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.xib */; };
+		6ED8C5461FF095110072A6DA /* CollectionHeaderReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED8C5451FF095110072A6DA /* CollectionHeaderReusableView.m */; };
+		6ED8C5491FF099A00072A6DA /* PriceExpensesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED8C5481FF099A00072A6DA /* PriceExpensesModel.m */; };
 		6EF5150C1FEB7D4C00860625 /* TotalPriceExpensesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF5150B1FEB7D4C00860625 /* TotalPriceExpensesViewController.m */; };
 		6EF5150F1FEB7F8A00860625 /* TotalPriceExpensesTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF5150E1FEB7F8A00860625 /* TotalPriceExpensesTool.m */; };
 		6EF515121FEB888900860625 /* TotalPriceExpensesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF515111FEB888900860625 /* TotalPriceExpensesModel.m */; };
 		6EFD5BA41F611F8A00FA20CE /* ZZQRCodeTableviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFD5BA31F611F8A00FA20CE /* ZZQRCodeTableviewController.m */; };
+		764B9423F7BD93C62C6F87B1 /* libPods-ZZQRCode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D84B1FA1AD13430EE3A01E /* libPods-ZZQRCode.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		488408704454AD8829F7D9B5 /* Pods-ZZQRCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZQRCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZZQRCode/Pods-ZZQRCode.debug.xcconfig"; sourceTree = "<group>"; };
 		6E389CED1F384D90008D0762 /* ZZQRCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZZQRCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E389CF11F384D90008D0762 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6E389CF31F384D90008D0762 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,6 +60,13 @@
 		6E7C0D951FE9104C0097B587 /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
 		6E7C0D971FE911CA0097B587 /* GCDTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDTool.h; sourceTree = "<group>"; };
 		6E7C0D981FE911CA0097B587 /* GCDTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDTool.m; sourceTree = "<group>"; };
+		6E84D5E91FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TotalPriceEepensesCollectionViewCell.h; sourceTree = "<group>"; };
+		6E84D5EA1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TotalPriceEepensesCollectionViewCell.m; sourceTree = "<group>"; };
+		6E84D5EB1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalPriceEepensesCollectionViewCell.xib; sourceTree = "<group>"; };
+		6ED8C5441FF095110072A6DA /* CollectionHeaderReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionHeaderReusableView.h; sourceTree = "<group>"; };
+		6ED8C5451FF095110072A6DA /* CollectionHeaderReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionHeaderReusableView.m; sourceTree = "<group>"; };
+		6ED8C5471FF099A00072A6DA /* PriceExpensesModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PriceExpensesModel.h; sourceTree = "<group>"; };
+		6ED8C5481FF099A00072A6DA /* PriceExpensesModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PriceExpensesModel.m; sourceTree = "<group>"; };
 		6EF5150A1FEB7D4C00860625 /* TotalPriceExpensesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TotalPriceExpensesViewController.h; sourceTree = "<group>"; };
 		6EF5150B1FEB7D4C00860625 /* TotalPriceExpensesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TotalPriceExpensesViewController.m; sourceTree = "<group>"; };
 		6EF5150D1FEB7F8A00860625 /* TotalPriceExpensesTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TotalPriceExpensesTool.h; sourceTree = "<group>"; };
@@ -62,6 +75,8 @@
 		6EF515111FEB888900860625 /* TotalPriceExpensesModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TotalPriceExpensesModel.m; sourceTree = "<group>"; };
 		6EFD5BA21F611F8A00FA20CE /* ZZQRCodeTableviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQRCodeTableviewController.h; sourceTree = "<group>"; };
 		6EFD5BA31F611F8A00FA20CE /* ZZQRCodeTableviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQRCodeTableviewController.m; sourceTree = "<group>"; };
+		95D84B1FA1AD13430EE3A01E /* libPods-ZZQRCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZZQRCode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB2CD4F4CB2997B9C11474A8 /* Pods-ZZQRCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZQRCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZZQRCode/Pods-ZZQRCode.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,17 +84,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				764B9423F7BD93C62C6F87B1 /* libPods-ZZQRCode.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19D04A1837F7B53F1FFB03DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95D84B1FA1AD13430EE3A01E /* libPods-ZZQRCode.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6E389CE41F384D90008D0762 = {
 			isa = PBXGroup;
 			children = (
 				6E389CEF1F384D90008D0762 /* ZZQRCode */,
 				6E389CEE1F384D90008D0762 /* Products */,
+				AA04D8D7187D633F69CF69E4 /* Pods */,
+				19D04A1837F7B53F1FFB03DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,8 +194,24 @@
 				6EF5150E1FEB7F8A00860625 /* TotalPriceExpensesTool.m */,
 				6EF515101FEB888900860625 /* TotalPriceExpensesModel.h */,
 				6EF515111FEB888900860625 /* TotalPriceExpensesModel.m */,
+				6ED8C5471FF099A00072A6DA /* PriceExpensesModel.h */,
+				6ED8C5481FF099A00072A6DA /* PriceExpensesModel.m */,
+				6E84D5E91FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.h */,
+				6E84D5EA1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.m */,
+				6E84D5EB1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.xib */,
+				6ED8C5441FF095110072A6DA /* CollectionHeaderReusableView.h */,
+				6ED8C5451FF095110072A6DA /* CollectionHeaderReusableView.m */,
 			);
 			path = TotalPriceExpenses;
+			sourceTree = "<group>";
+		};
+		AA04D8D7187D633F69CF69E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				488408704454AD8829F7D9B5 /* Pods-ZZQRCode.debug.xcconfig */,
+				DB2CD4F4CB2997B9C11474A8 /* Pods-ZZQRCode.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,9 +221,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E389D041F384D90008D0762 /* Build configuration list for PBXNativeTarget "ZZQRCode" */;
 			buildPhases = (
+				4D89B2BD402C21679D5FF2C4 /* [CP] Check Pods Manifest.lock */,
 				6E389CE91F384D90008D0762 /* Sources */,
 				6E389CEA1F384D90008D0762 /* Frameworks */,
 				6E389CEB1F384D90008D0762 /* Resources */,
+				967BDE7A27C4A14DD17B60BC /* [CP] Embed Pods Frameworks */,
+				48AAB939FAC16FF1CA292A2A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,10 +280,62 @@
 				6E389CFD1F384D90008D0762 /* Assets.xcassets in Resources */,
 				6E5510351F38584800CC0543 /* sound.caf in Resources */,
 				6E389CFB1F384D90008D0762 /* Main.storyboard in Resources */,
+				6E84D5ED1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48AAB939FAC16FF1CA292A2A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZZQRCode/Pods-ZZQRCode-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D89B2BD402C21679D5FF2C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZZQRCode-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		967BDE7A27C4A14DD17B60BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZZQRCode/Pods-ZZQRCode-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6E389CE91F384D90008D0762 /* Sources */ = {
@@ -249,13 +346,16 @@
 				6E389CF51F384D90008D0762 /* AppDelegate.m in Sources */,
 				6E389CF21F384D90008D0762 /* main.m in Sources */,
 				6E4B04981FD6A46D006B25E6 /* ZZQRCodeImageViewController.m in Sources */,
+				6ED8C5491FF099A00072A6DA /* PriceExpensesModel.m in Sources */,
 				6E7C0D961FE9104C0097B587 /* GCDViewController.m in Sources */,
+				6E84D5EC1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.m in Sources */,
 				6E4B049E1FD6A482006B25E6 /* NSTimerViewController.m in Sources */,
 				6E4B04991FD6A46D006B25E6 /* ZZQRCodeManager.m in Sources */,
 				6E4B049B1FD6A46D006B25E6 /* ZZQRCodeViewController.m in Sources */,
 				6E4B049A1FD6A46D006B25E6 /* ZZQRCodeScanningView.m in Sources */,
 				6E4B04971FD6A46D006B25E6 /* ZZQRCodeFinallyViewController.m in Sources */,
 				6EF5150C1FEB7D4C00860625 /* TotalPriceExpensesViewController.m in Sources */,
+				6ED8C5461FF095110072A6DA /* CollectionHeaderReusableView.m in Sources */,
 				6EF515121FEB888900860625 /* TotalPriceExpensesModel.m in Sources */,
 				6EF5150F1FEB7F8A00860625 /* TotalPriceExpensesTool.m in Sources */,
 				6EFD5BA41F611F8A00FA20CE /* ZZQRCodeTableviewController.m in Sources */,
@@ -384,6 +484,7 @@
 		};
 		6E389D051F384D90008D0762 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 488408704454AD8829F7D9B5 /* Pods-ZZQRCode.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5MT9S95PUC;
@@ -398,6 +499,7 @@
 		};
 		6E389D061F384D90008D0762 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB2CD4F4CB2997B9C11474A8 /* Pods-ZZQRCode.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5MT9S95PUC;

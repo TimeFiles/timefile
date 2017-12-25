@@ -9,6 +9,7 @@
 #import "TotalPriceExpensesViewController.h"
 #import "TotalPriceExpensesTool.h"
 #import "TotalPriceExpensesModel.h"
+#import "PriceExpensesModel.h"
 
 @interface TotalPriceExpensesViewController ()
 <
@@ -34,7 +35,36 @@
     [self loadToolBar];
     self.isSeleced = YES;
     self.model = [[TotalPriceExpensesModel alloc] init];
-    self.model.title = @"标题";
+    self.model.title = @"费用明细";
+    self.model.FirstPriceArr = [NSMutableArray array];
+    self.model.SecondPriceArr = [NSMutableArray array];
+    self.model.ThreePriceArr = [NSMutableArray array];
+    self.model.FourPriceArr = [NSMutableArray array];
+    
+    PriceExpensesModel *Fmodel = [[PriceExpensesModel alloc] init];
+    Fmodel.title = @"基本团费";
+    Fmodel.firstTitle = @"成人价";
+    Fmodel.firstPrice = @"Y 100*1/人";
+    Fmodel.sencondTitle = @"儿童价";
+    Fmodel.sencondPrice = @"Y 10*1/人";
+    [self.model.FirstPriceArr addObject:Fmodel];
+    
+    PriceExpensesModel *Smodel = [[PriceExpensesModel alloc] init];
+    Smodel.title = @"单房差";
+    Smodel.firstTitle = @"单房差";
+    Smodel.firstPrice = @"Y +100*1/人";
+    [self.model.SecondPriceArr addObject:Smodel];
+    
+    PriceExpensesModel *Tmodel = [[PriceExpensesModel alloc] init];
+    Tmodel.title = @"优惠券";
+    Tmodel.firstTitle = @"优惠券";
+    Tmodel.firstPrice = @"Y -100*1/人";
+    [self.model.ThreePriceArr addObject:Tmodel];
+//    self.model.fundametntalPriceArr[1].sencondTitle = @"儿童价";
+//    self.model.fundametntalPriceArr[1].sencondPrice = @"Y 10*1/人";
+//    [self.model.ifSinglePriceArr addObject:@"附加项目"];
+//    [self.model.couponPriceArr addObject:@"优惠券"];
+    
 }
 
 - (void)loadToolBar {
@@ -60,7 +90,7 @@
         self.isSeleced = NO;
     }else
     {
-        [self totalPriceDetailBackViewDismiss];
+        [[TotalPriceExpensesTool sharedTotalPriceExpenses] dismissExpensesDetailView];
         self.isSeleced = YES;
     }
 }

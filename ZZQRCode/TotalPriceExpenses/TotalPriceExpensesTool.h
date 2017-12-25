@@ -24,4 +24,7 @@
 
 - (void)showTotalPriceExpensesTool:(TotalPriceExpensesModel *)model controller:(UIViewController *)controller;
 
+//点击屏幕 dismiss掉费用明细的视图
+- (void)dismissExpensesDetailView;
+
 @end
