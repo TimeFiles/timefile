@@ -118,14 +118,36 @@ static NSString *const headerId = @"headerId";
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     
     if (section == 0) {
-        return 2;
+        if (self.Model.FirstPriceArr.firstObject.sencondPrice.length == 0) {
+            return 1;
+        }else
+        {
+            return 2;
+        }
     }else if (section == 1) {
-        return 2;
+        if (self.Model.SecondPriceArr.firstObject.sencondPrice.length == 0) {
+            return 1;
+        }else
+        {
+            return 2;
+        }
     }else if (section == 2) {
-        return 1;
+        if (self.Model.ThreePriceArr.firstObject.sencondPrice.length == 0) {
+            return 1;
+        }else
+        {
+            return 2;
+        }
+    }else if (section == 3) {
+        if (self.Model.FourPriceArr.firstObject.sencondPrice.length == 0) {
+            return 1;
+        }else
+        {
+            return 2;
+        }
     }else
     {
-        return 1;
+        return 0;
     }
 }
 

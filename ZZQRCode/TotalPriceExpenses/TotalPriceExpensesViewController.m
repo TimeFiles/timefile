@@ -60,11 +60,14 @@
     Tmodel.firstTitle = @"优惠券";
     Tmodel.firstPrice = @"Y -100*1/人";
     [self.model.ThreePriceArr addObject:Tmodel];
-//    self.model.fundametntalPriceArr[1].sencondTitle = @"儿童价";
-//    self.model.fundametntalPriceArr[1].sencondPrice = @"Y 10*1/人";
-//    [self.model.ifSinglePriceArr addObject:@"附加项目"];
-//    [self.model.couponPriceArr addObject:@"优惠券"];
     
+    PriceExpensesModel *FUmodel = [[PriceExpensesModel alloc] init];
+    FUmodel.title = @"福利卡";
+    FUmodel.firstTitle = @"福利卡";
+    FUmodel.firstPrice = @"Y -1000*2/人";
+    FUmodel.sencondTitle = @"福利卡1";
+    FUmodel.sencondPrice = @"Y -1000*2/人11";
+    [self.model.FourPriceArr addObject:FUmodel];
 }
 
 - (void)loadToolBar {
