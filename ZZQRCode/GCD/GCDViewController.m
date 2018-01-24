@@ -13,6 +13,7 @@
 
 @property (nonatomic, strong) UILabel *timerLabel;
 
+@property (nonatomic,strong) FBShimmeringView *shimmeringView;
 @end
 
 @implementation GCDViewController
@@ -22,10 +23,12 @@
     
     self.title = @"GCD";
     self.view.backgroundColor = [UIColor whiteColor];
+    self.shimmeringView = [[FBShimmeringView alloc] initWithFrame:CGRectMake(100, 100, SCREEN_WIDTH -200, 30)];
+    [self.view addSubview:self.shimmeringView];
     
-    self.timerLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, SCREEN_WIDTH -200, 30)];
+    self.timerLabel = [[UILabel alloc] initWithFrame:self.shimmeringView.bounds];
     self.timerLabel.layer.cornerRadius = 5.0;
-    self.timerLabel.text = @"获取验证码";
+    self.timerLabel.text = NSLocalizedString(@"获取验证码", nil);
     self.timerLabel.layer.borderWidth = 1;
     self.timerLabel.layer.borderColor = [UIColor grayColor].CGColor;
     self.timerLabel.textAlignment = NSTextAlignmentCenter;
@@ -33,7 +36,9 @@
     self.timerLabel.userInteractionEnabled = YES;
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(sendCodeTouched:)];
     [self.timerLabel addGestureRecognizer:tap];
-    [self.view addSubview:self.timerLabel];
+    
+    self.shimmeringView.contentView = self.timerLabel;
+    self.shimmeringView.shimmering = YES;
     
 }
 

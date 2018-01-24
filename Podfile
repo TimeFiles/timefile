@@ -4,5 +4,5 @@ platform :ios, '8.0'
 target 'ZZQRCode' do
 
 pod 'Masonry'
-
+pod 'Shimmer'
 end
