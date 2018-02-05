@@ -11,6 +11,7 @@
 #import "NSTimerViewController.h"
 #import "GCDViewController.h"
 #import "TotalPriceExpensesViewController.h"
+#import "TestViewController.h"
 
 @interface ZZQRCodeTableviewController ()
 <
@@ -33,7 +34,7 @@ UITableViewDataSource
     [self.view addSubview:self.tableView];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.dateArr = [NSMutableArray arrayWithObjects:@"点击进入到扫一扫",@"输入文字或图片生成二维码",@"NSTimer(验证码倒计时)",@"GCD(验证码倒计时)",@"TotalPriceExpenses(费用明细)", nil];
+    self.dateArr = [NSMutableArray arrayWithObjects:@"点击进入到扫一扫",@"输入文字或图片生成二维码",@"NSTimer(验证码倒计时)",@"GCD(验证码倒计时)",@"TotalPriceExpenses(费用明细)",@"test", nil];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
 }
 
@@ -134,7 +135,22 @@ UITableViewDataSource
     }else if (indexPath.row == 4) {
         TotalPriceExpensesViewController *next = [[TotalPriceExpensesViewController alloc] init];
         [self.navigationController pushViewController:next animated:YES];
+    }else if (indexPath.row == 5) {
+        TestViewController *next = [[TestViewController alloc] init];
+        [self.navigationController pushViewController:next animated:YES];
     }
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    
+    [super viewDidDisappear:animated];
+    NSLog(@"viewDidDisappear");
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    
+    [super viewWillDisappear:animated];
+    NSLog(@"viewWillDisappear");
 }
 
 - (UITableView *)tableView {
