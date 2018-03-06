@@ -7,6 +7,7 @@
 //
 
 #import "TestViewController.h"
+#import "testku.h"
 
 @interface TestViewController ()
 
@@ -55,6 +56,11 @@
 - (void)dealloc {
     
     NSLog(@"dealloc");
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    [testku test];
 }
 
 - (void)didReceiveMemoryWarning {

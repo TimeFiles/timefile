@@ -26,6 +26,7 @@
 		6E7C0D991FE911CA0097B587 /* GCDTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7C0D981FE911CA0097B587 /* GCDTool.m */; };
 		6E84D5EC1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E84D5EA1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.m */; };
 		6E84D5ED1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E84D5EB1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.xib */; };
+		6E9E7C8C204E88DA000581E3 /* libtestku.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9E7C8B204E88DA000581E3 /* libtestku.a */; };
 		6ED8C5461FF095110072A6DA /* CollectionHeaderReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED8C5451FF095110072A6DA /* CollectionHeaderReusableView.m */; };
 		6ED8C5491FF099A00072A6DA /* PriceExpensesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED8C5481FF099A00072A6DA /* PriceExpensesModel.m */; };
 		6EF5150C1FEB7D4C00860625 /* TotalPriceExpensesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF5150B1FEB7D4C00860625 /* TotalPriceExpensesViewController.m */; };
@@ -72,6 +73,8 @@
 		6E84D5E91FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TotalPriceEepensesCollectionViewCell.h; sourceTree = "<group>"; };
 		6E84D5EA1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TotalPriceEepensesCollectionViewCell.m; sourceTree = "<group>"; };
 		6E84D5EB1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalPriceEepensesCollectionViewCell.xib; sourceTree = "<group>"; };
+		6E9E7C8A204E88DA000581E3 /* testku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testku.h; sourceTree = "<group>"; };
+		6E9E7C8B204E88DA000581E3 /* libtestku.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtestku.a; sourceTree = "<group>"; };
 		6ED8C5441FF095110072A6DA /* CollectionHeaderReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionHeaderReusableView.h; sourceTree = "<group>"; };
 		6ED8C5451FF095110072A6DA /* CollectionHeaderReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionHeaderReusableView.m; sourceTree = "<group>"; };
 		6ED8C5471FF099A00072A6DA /* PriceExpensesModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PriceExpensesModel.h; sourceTree = "<group>"; };
@@ -94,6 +97,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				764B9423F7BD93C62C6F87B1 /* libPods-ZZQRCode.a in Frameworks */,
+				6E9E7C8C204E88DA000581E3 /* libtestku.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +135,8 @@
 		6E389CE41F384D90008D0762 = {
 			isa = PBXGroup;
 			children = (
+				6E9E7C8B204E88DA000581E3 /* libtestku.a */,
+				6E9E7C8A204E88DA000581E3 /* testku.h */,
 				6E389CEF1F384D90008D0762 /* ZZQRCode */,
 				6E389CEE1F384D90008D0762 /* Products */,
 				AA04D8D7187D633F69CF69E4 /* Pods */,
@@ -526,6 +532,10 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZZQRCode/PrefixHeader.pch";
 				INFOPLIST_FILE = ZZQRCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhangpeng.ZZQRCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -541,6 +551,10 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZZQRCode/PrefixHeader.pch";
 				INFOPLIST_FILE = ZZQRCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhangpeng.ZZQRCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
