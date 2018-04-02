@@ -27,6 +27,9 @@
 		6E84D5EC1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E84D5EA1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.m */; };
 		6E84D5ED1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E84D5EB1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.xib */; };
 		6E9E7C8C204E88DA000581E3 /* libtestku.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9E7C8B204E88DA000581E3 /* libtestku.a */; };
+		6EAB31DC20721348009A7EC4 /* YYKitTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAB31DA20721347009A7EC4 /* YYKitTableViewCell.m */; };
+		6EAB31DD20721348009A7EC4 /* YYKitTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EAB31DB20721347009A7EC4 /* YYKitTableViewCell.xib */; };
+		6EAB31E320721AE0009A7EC4 /* YYKitModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAB31E220721AE0009A7EC4 /* YYKitModel.m */; };
 		6ED8C5461FF095110072A6DA /* CollectionHeaderReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED8C5451FF095110072A6DA /* CollectionHeaderReusableView.m */; };
 		6ED8C5491FF099A00072A6DA /* PriceExpensesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED8C5481FF099A00072A6DA /* PriceExpensesModel.m */; };
 		6EF2A0E2206A4FE000C37FF7 /* NSArray+AvoidCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF2A0E1206A4FE000C37FF7 /* NSArray+AvoidCrash.m */; };
@@ -76,6 +79,11 @@
 		6E84D5EB1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalPriceEepensesCollectionViewCell.xib; sourceTree = "<group>"; };
 		6E9E7C8A204E88DA000581E3 /* testku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testku.h; sourceTree = "<group>"; };
 		6E9E7C8B204E88DA000581E3 /* libtestku.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtestku.a; sourceTree = "<group>"; };
+		6EAB31D920721347009A7EC4 /* YYKitTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYKitTableViewCell.h; sourceTree = "<group>"; };
+		6EAB31DA20721347009A7EC4 /* YYKitTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYKitTableViewCell.m; sourceTree = "<group>"; };
+		6EAB31DB20721347009A7EC4 /* YYKitTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYKitTableViewCell.xib; sourceTree = "<group>"; };
+		6EAB31E120721AE0009A7EC4 /* YYKitModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYKitModel.h; sourceTree = "<group>"; };
+		6EAB31E220721AE0009A7EC4 /* YYKitModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYKitModel.m; sourceTree = "<group>"; };
 		6ED8C5441FF095110072A6DA /* CollectionHeaderReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionHeaderReusableView.h; sourceTree = "<group>"; };
 		6ED8C5451FF095110072A6DA /* CollectionHeaderReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionHeaderReusableView.m; sourceTree = "<group>"; };
 		6ED8C5471FF099A00072A6DA /* PriceExpensesModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PriceExpensesModel.h; sourceTree = "<group>"; };
@@ -129,6 +137,11 @@
 			children = (
 				6E2932C8202858040096BF07 /* YYKitViewController.h */,
 				6E2932C9202858040096BF07 /* YYKitViewController.m */,
+				6EAB31D920721347009A7EC4 /* YYKitTableViewCell.h */,
+				6EAB31DA20721347009A7EC4 /* YYKitTableViewCell.m */,
+				6EAB31DB20721347009A7EC4 /* YYKitTableViewCell.xib */,
+				6EAB31E120721AE0009A7EC4 /* YYKitModel.h */,
+				6EAB31E220721AE0009A7EC4 /* YYKitModel.m */,
 				6E2932CB202859AA0096BF07 /* YYFPSLabel.h */,
 				6E2932CC202859AA0096BF07 /* YYFPSLabel.m */,
 			);
@@ -318,6 +331,7 @@
 			files = (
 				6E389D001F384D90008D0762 /* LaunchScreen.storyboard in Resources */,
 				6E389CFD1F384D90008D0762 /* Assets.xcassets in Resources */,
+				6EAB31DD20721348009A7EC4 /* YYKitTableViewCell.xib in Resources */,
 				6E5510351F38584800CC0543 /* sound.caf in Resources */,
 				6E389CFB1F384D90008D0762 /* Main.storyboard in Resources */,
 				6E84D5ED1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.xib in Resources */,
@@ -390,6 +404,7 @@
 				6ED8C5491FF099A00072A6DA /* PriceExpensesModel.m in Sources */,
 				6EF2A0E2206A4FE000C37FF7 /* NSArray+AvoidCrash.m in Sources */,
 				6E2932CD202859AA0096BF07 /* YYFPSLabel.m in Sources */,
+				6EAB31DC20721348009A7EC4 /* YYKitTableViewCell.m in Sources */,
 				6E7C0D961FE9104C0097B587 /* GCDViewController.m in Sources */,
 				6E2932C62022F9D40096BF07 /* TestViewController.m in Sources */,
 				6E84D5EC1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.m in Sources */,
@@ -398,6 +413,7 @@
 				6E4B049B1FD6A46D006B25E6 /* ZZQRCodeViewController.m in Sources */,
 				6E4B049A1FD6A46D006B25E6 /* ZZQRCodeScanningView.m in Sources */,
 				6E4B04971FD6A46D006B25E6 /* ZZQRCodeFinallyViewController.m in Sources */,
+				6EAB31E320721AE0009A7EC4 /* YYKitModel.m in Sources */,
 				6EF5150C1FEB7D4C00860625 /* TotalPriceExpensesViewController.m in Sources */,
 				6ED8C5461FF095110072A6DA /* CollectionHeaderReusableView.m in Sources */,
 				6EF515121FEB888900860625 /* TotalPriceExpensesModel.m in Sources */,

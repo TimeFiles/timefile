@@ -8,6 +8,8 @@
 
 #import "YYKitViewController.h"
 #import "YYFPSLabel.h"
+#import "YYKitTableViewCell.h"
+#import "YYKitModel.h"
 
 @interface YYKitViewController ()
 <
@@ -16,6 +18,11 @@
 
 @property (nonatomic, strong) YYFPSLabel *fpsLabel;
 
+@property (nonatomic, strong) NSMutableArray *dateArr;
+
+@property (nonatomic,strong) UITableView *tableView;
+
+@property (nonatomic,strong) YYKitModel *model;
 @end
 
 @implementation YYKitViewController
@@ -32,15 +39,21 @@
     [super viewDidLoad];
     self.title = @"YYKit测试帧数";
     self.view.backgroundColor = [UIColor whiteColor];
-    UITableView *table = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
-    table.delegate = self;
-    table.dataSource = self;
-    [self.view addSubview:table];
-    table_ = table;
-    [table registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+    
+    //数据源
+    self.dateArr = [NSMutableArray arrayWithObjects:@"卡不卡,卡卡卡卡,bigChange",@"卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange",@"卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange",@"卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange",@"卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange",@"卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange",@"卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange",@"卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange",@"卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange",@"卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange",@"卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange卡不卡,卡卡卡卡,bigChange", nil];
+    
+    
+    _tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+    _tableView.estimatedRowHeight = 200;
+    _tableView.rowHeight = UITableViewAutomaticDimension;
+    [self.view addSubview:_tableView];
     
     //    Demo1: FPS label 用法
     if (ISHIDDEN) {
+        //如果是DEBUG模式 显示出来FPSLabel
         NSLog(@"YES");
         [self testFPSLabel];
     }else{
@@ -135,24 +148,38 @@
 #pragma mark - other
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 100;
+    return self.dateArr.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    cell.textLabel.text = @"卡不卡,卡卡卡卡,bigChange";
+
+    YYKitTableViewCell*cell = [[NSBundle mainBundle] loadNibNamed:@"YYKitTableViewCell" owner:self options:nil].firstObject;
+    cell.titleLabel.text = self.dateArr[indexPath.row];
+    [cell layoutIfNeeded];
+    CGFloat height = [cell.titleLabel systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+    self.model.cell_height = height;
     return cell;
 }
 
-/*
-#pragma mark - Navigation
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    return self.model.cell_height+10;
 }
-*/
 
+- (NSMutableArray *)dateArr {
+    
+    if (_dateArr == nil) {
+        _dateArr = [NSMutableArray array];
+    }
+    return _dateArr;
+}
+
+- (YYKitModel *)model {
+    
+    if (_model == nil) {
+        _model = [[YYKitModel alloc] init];
+    }
+    return _model;
+    
+}
 @end
