@@ -40,7 +40,13 @@
     [table registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     
     //    Demo1: FPS label 用法
-    [self testFPSLabel];
+    if (ISHIDDEN) {
+        NSLog(@"YES");
+        [self testFPSLabel];
+    }else{
+        NSLog(@"NO");
+    }
+    
     
     //    Demo2: 测试在子线程使用 timer
     //    [self testSubThread];

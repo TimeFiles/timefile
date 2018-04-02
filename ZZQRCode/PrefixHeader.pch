@@ -12,6 +12,13 @@
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 
+#ifdef DEBUG
+#define ISHIDDEN YES
+#else
+#define ISHIDDEN NO
+#endif
+
+
 #import "Masonry.h"
 #import "FBShimmeringView.h"
 
