@@ -1,4 +1,6 @@
 PODS:
+  - FSCalendar (2.7.9)
+  - IQKeyboardManager (5.0.7)
   - Masonry (1.1.0)
   - Shimmer (1.0.2)
   - YYKit (1.0.9):
@@ -6,15 +8,19 @@ PODS:
   - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
+  - FSCalendar
+  - IQKeyboardManager
   - Masonry
   - Shimmer
   - YYKit
 
 SPEC CHECKSUMS:
+  FSCalendar: a04b09f16f811bc92e82f3cf852a15225233b9d5
+  IQKeyboardManager: 0bfa4607d39924116b5c0c8b55b5d789288b5cba
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: aae7af6174346fe238c50ef2af336af2a343a87f
+PODFILE CHECKSUM: bd2e5b8fcceab706f441143827011dba1f925393
 
 COCOAPODS: 1.3.1

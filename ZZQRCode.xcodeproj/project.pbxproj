@@ -36,6 +36,7 @@
 		6EF5150C1FEB7D4C00860625 /* TotalPriceExpensesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF5150B1FEB7D4C00860625 /* TotalPriceExpensesViewController.m */; };
 		6EF5150F1FEB7F8A00860625 /* TotalPriceExpensesTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF5150E1FEB7F8A00860625 /* TotalPriceExpensesTool.m */; };
 		6EF515121FEB888900860625 /* TotalPriceExpensesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF515111FEB888900860625 /* TotalPriceExpensesModel.m */; };
+		6EFBF0DA207468FB001C8B7A /* MasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFBF0D9207468FB001C8B7A /* MasonryViewController.m */; };
 		6EFD5BA41F611F8A00FA20CE /* ZZQRCodeTableviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFD5BA31F611F8A00FA20CE /* ZZQRCodeTableviewController.m */; };
 		764B9423F7BD93C62C6F87B1 /* libPods-ZZQRCode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D84B1FA1AD13430EE3A01E /* libPods-ZZQRCode.a */; };
 /* End PBXBuildFile section */
@@ -95,6 +96,8 @@
 		6EF5150E1FEB7F8A00860625 /* TotalPriceExpensesTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TotalPriceExpensesTool.m; sourceTree = "<group>"; };
 		6EF515101FEB888900860625 /* TotalPriceExpensesModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TotalPriceExpensesModel.h; sourceTree = "<group>"; };
 		6EF515111FEB888900860625 /* TotalPriceExpensesModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TotalPriceExpensesModel.m; sourceTree = "<group>"; };
+		6EFBF0D8207468FB001C8B7A /* MasonryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasonryViewController.h; sourceTree = "<group>"; };
+		6EFBF0D9207468FB001C8B7A /* MasonryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasonryViewController.m; sourceTree = "<group>"; };
 		6EFD5BA21F611F8A00FA20CE /* ZZQRCodeTableviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQRCodeTableviewController.h; sourceTree = "<group>"; };
 		6EFD5BA31F611F8A00FA20CE /* ZZQRCodeTableviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQRCodeTableviewController.m; sourceTree = "<group>"; };
 		95D84B1FA1AD13430EE3A01E /* libPods-ZZQRCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZZQRCode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,6 +178,7 @@
 				6E389CF41F384D90008D0762 /* AppDelegate.m */,
 				6EFD5BA21F611F8A00FA20CE /* ZZQRCodeTableviewController.h */,
 				6EFD5BA31F611F8A00FA20CE /* ZZQRCodeTableviewController.m */,
+				6EFBF0D7207468DF001C8B7A /* masonry */,
 				6E2932C7202857F90096BF07 /* YYKit */,
 				6E2932C32022F9BF0096BF07 /* Test */,
 				6EF515091FEB7D3600860625 /* TotalPriceExpenses */,
@@ -256,6 +260,15 @@
 				6ED8C5451FF095110072A6DA /* CollectionHeaderReusableView.m */,
 			);
 			path = TotalPriceExpenses;
+			sourceTree = "<group>";
+		};
+		6EFBF0D7207468DF001C8B7A /* masonry */ = {
+			isa = PBXGroup;
+			children = (
+				6EFBF0D8207468FB001C8B7A /* MasonryViewController.h */,
+				6EFBF0D9207468FB001C8B7A /* MasonryViewController.m */,
+			);
+			path = masonry;
 			sourceTree = "<group>";
 		};
 		AA04D8D7187D633F69CF69E4 /* Pods */ = {
@@ -347,9 +360,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZZQRCode/Pods-ZZQRCode-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -398,6 +414,7 @@
 			files = (
 				6E2932CA202858040096BF07 /* YYKitViewController.m in Sources */,
 				6E7C0D991FE911CA0097B587 /* GCDTool.m in Sources */,
+				6EFBF0DA207468FB001C8B7A /* MasonryViewController.m in Sources */,
 				6E389CF51F384D90008D0762 /* AppDelegate.m in Sources */,
 				6E389CF21F384D90008D0762 /* main.m in Sources */,
 				6E4B04981FD6A46D006B25E6 /* ZZQRCodeImageViewController.m in Sources */,
