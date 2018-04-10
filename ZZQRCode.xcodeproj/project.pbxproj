@@ -78,7 +78,6 @@
 		6E84D5E91FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TotalPriceEepensesCollectionViewCell.h; sourceTree = "<group>"; };
 		6E84D5EA1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TotalPriceEepensesCollectionViewCell.m; sourceTree = "<group>"; };
 		6E84D5EB1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalPriceEepensesCollectionViewCell.xib; sourceTree = "<group>"; };
-		6E9E7C8A204E88DA000581E3 /* testku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testku.h; sourceTree = "<group>"; };
 		6E9E7C8B204E88DA000581E3 /* libtestku.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtestku.a; sourceTree = "<group>"; };
 		6EAB31D920721347009A7EC4 /* YYKitTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYKitTableViewCell.h; sourceTree = "<group>"; };
 		6EAB31DA20721347009A7EC4 /* YYKitTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYKitTableViewCell.m; sourceTree = "<group>"; };
@@ -155,7 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				6E9E7C8B204E88DA000581E3 /* libtestku.a */,
-				6E9E7C8A204E88DA000581E3 /* testku.h */,
 				6E389CEF1F384D90008D0762 /* ZZQRCode */,
 				6E389CEE1F384D90008D0762 /* Products */,
 				AA04D8D7187D633F69CF69E4 /* Pods */,

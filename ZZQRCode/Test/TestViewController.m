@@ -7,7 +7,6 @@
 //
 
 #import "TestViewController.h"
-#import "testku.h"
 
 typedef NS_ENUM(NSInteger, sex) {
     man,
@@ -83,7 +82,7 @@ typedef NS_ENUM(NSInteger, sex) {
     //2、添加储存的文件名
     NSString *path  = [docPath stringByAppendingPathComponent:@"data.archiver"];
     //3、将一个对象保存到文件中
-    NSArray *abc = @[@"1",@"2",@"3"];
+//    NSArray *abc = @[@"1",@"2",@"3"];
     NSDictionary *dict = @{
                            @"abc":@"123",
                            @"def":@"234"
@@ -200,7 +199,7 @@ typedef NS_ENUM(NSInteger, sex) {
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     
-    [testku test];
+    
 }
 
 - (void)didReceiveMemoryWarning {
