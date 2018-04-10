@@ -65,8 +65,11 @@
 //    self.view.backgroundColor = [UIColor whiteColor];
     NSLog(@"Masonry");
     
+    [UIView  animateWithDuration:1.0 animations:^{
+        
+        self.view.alpha = 0.5;
+    }];
 }
-
 
 
 - (void)didReceiveMemoryWarning {

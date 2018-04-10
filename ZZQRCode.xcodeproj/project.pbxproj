@@ -576,7 +576,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhangpeng.ZZQRCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = arm64;
+				VALID_ARCHS = "armv7s armv7 arm64";
 			};
 			name = Debug;
 		};
@@ -597,7 +597,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhangpeng.ZZQRCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = arm64;
+				VALID_ARCHS = "armv7s armv7 arm64";
 			};
 			name = Release;
 		};
