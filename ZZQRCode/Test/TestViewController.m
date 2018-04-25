@@ -32,6 +32,12 @@ typedef NS_ENUM(NSInteger, sex) {
     NSLog(@"viewDidAppear");
 }
 
+//- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+//
+//    TestHeaderViewController *next = [[TestHeaderViewController alloc] init];
+//    [self.navigationController pushViewController:next animated:YES];
+//}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -43,73 +49,11 @@ typedef NS_ENUM(NSInteger, sex) {
     //测试数组和字典排序操作
 //    [self testArr];
     
-    NSLog(@"1");
-    //死锁
-//    dispatch_sync(dispatch_get_main_queue(), ^{
-//
-//    });
-    dispatch_async(dispatch_get_main_queue(), ^{
-        NSLog(@"2");
-        
-    });
-    NSLog(@"3");
-    
+    //测试线程死锁
+//    [self testDispatch];
 
-    NSArray *array = @[@"a", @"b", @"c"];
-    @try {
-        // 可能抛出异常的代码
-        [array objectAtIndex:3];
-    }
-    @catch (NSException *exception) {
-        // 处理异常
-        NSLog(@"throw an exception: %@", exception.reason);
-    }
-    @finally {
-        NSLog(@"finally execution");
-    }
-    
-    NSArray *aArray = @[@[@"a", @"b"], @[@"c", @"d"]];
-    NSLog(@"aArray----%p",aArray);
-    NSArray *bArray = [NSArray arrayWithArray:aArray];
-    NSLog(@"bArray----%p",bArray);
-    NSArray *cArray = [NSKeyedUnarchiver unarchiveTopLevelObjectWithData:[NSKeyedArchiver archivedDataWithRootObject:aArray] error:nil];
-    NSLog(@"cArray----%p",cArray);
-
-    
-#pragma mark --- 归档和解档
-    //1.获取文件路径
-    NSString *docPath=[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-    //2、添加储存的文件名
-    NSString *path  = [docPath stringByAppendingPathComponent:@"data.archiver"];
-    //3、将一个对象保存到文件中
-//    NSArray *abc = @[@"1",@"2",@"3"];
-    NSDictionary *dict = @{
-                           @"abc":@"123",
-                           @"def":@"234"
-                           };
-    BOOL flag = [NSKeyedArchiver archiveRootObject:dict toFile:path];
-    
-    if (flag) {
-        NSLog(@"success");
-    }else
-    {
-        NSLog(@"error");
-    }
-    id a = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
-    
-    NSLog(@"---%@",[a class]);
-    if ([a isKindOfClass:[NSArray class]]) {
-        NSLog(@"NSArray");
-    }else if ([a isKindOfClass:[NSDictionary class]]) {
-        NSLog(@"NSDictionary");
-    }else if ([a isKindOfClass:[NSString class]]) {
-        NSLog(@"NSString");
-    }
-    
-    NSDictionary *d = [[NSDictionary alloc] initWithDictionary:dict copyItems:YES];
-    NSLog(@"dict---%p",dict);
-    NSLog(@"d---%p",d);
-    
+    //测试归档
+//    [self testNSSearchPath];
 }
 
 - (void)testThread {
@@ -185,26 +129,89 @@ typedef NS_ENUM(NSInteger, sex) {
          }];
          //按照升序和降序的顺序排序
          NSLog(@"dict ===%@",dict);
-     
-     
-     
-     
+   
  }
-
 
 - (void)dealloc {
     
     NSLog(@"dealloc");
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    
-    
-}
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)testDispatch {
+    
+    NSLog(@"1");
+    //死锁
+    //    dispatch_sync(dispatch_get_main_queue(), ^{
+    //
+    //    });
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"2");
+        
+    });
+    NSLog(@"3");
+    
+    
+    NSArray *array = @[@"a", @"b", @"c"];
+    @try {
+        // 可能抛出异常的代码
+        [array objectAtIndex:3];
+    }
+    @catch (NSException *exception) {
+        // 处理异常
+        NSLog(@"throw an exception: %@", exception.reason);
+    }
+    @finally {
+        NSLog(@"finally execution");
+    }
+    
+    NSArray *aArray = @[@[@"a", @"b"], @[@"c", @"d"]];
+    NSLog(@"aArray----%p",aArray);
+    NSArray *bArray = [NSArray arrayWithArray:aArray];
+    NSLog(@"bArray----%p",bArray);
+    NSArray *cArray = [NSKeyedUnarchiver unarchiveTopLevelObjectWithData:[NSKeyedArchiver archivedDataWithRootObject:aArray] error:nil];
+    NSLog(@"cArray----%p",cArray);
+    
+}
+
+- (void)testNSSearchPath {
+#pragma mark --- 归档和解档
+    //1.获取文件路径
+    NSString *docPath=[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    //2、添加储存的文件名
+    NSString *path  = [docPath stringByAppendingPathComponent:@"data.archiver"];
+    //3、将一个对象保存到文件中
+    //    NSArray *abc = @[@"1",@"2",@"3"];
+    NSDictionary *dict = @{
+                           @"abc":@"123",
+                           @"def":@"234"
+                           };
+    BOOL flag = [NSKeyedArchiver archiveRootObject:dict toFile:path];
+    
+    if (flag) {
+        NSLog(@"success");
+    }else
+    {
+        NSLog(@"error");
+    }
+    id a = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+    
+    NSLog(@"---%@",[a class]);
+    if ([a isKindOfClass:[NSArray class]]) {
+        NSLog(@"NSArray");
+    }else if ([a isKindOfClass:[NSDictionary class]]) {
+        NSLog(@"NSDictionary");
+    }else if ([a isKindOfClass:[NSString class]]) {
+        NSLog(@"NSString");
+    }
+    
+    NSDictionary *d = [[NSDictionary alloc] initWithDictionary:dict copyItems:YES];
+    NSLog(@"dict---%p",dict);
+    NSLog(@"d---%p",d);
 }
 
 /*

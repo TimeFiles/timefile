@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E11EDC2207C85AA0058C20F /* TestHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E11EDC1207C85AA0058C20F /* TestHeaderViewController.m */; };
 		6E2932C62022F9D40096BF07 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2932C52022F9D40096BF07 /* TestViewController.m */; };
 		6E2932CA202858040096BF07 /* YYKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2932C9202858040096BF07 /* YYKitViewController.m */; };
 		6E2932CD202859AA0096BF07 /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2932CC202859AA0096BF07 /* YYFPSLabel.m */; };
@@ -43,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		488408704454AD8829F7D9B5 /* Pods-ZZQRCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZQRCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZZQRCode/Pods-ZZQRCode.debug.xcconfig"; sourceTree = "<group>"; };
+		6E11EDC0207C85AA0058C20F /* TestHeaderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestHeaderViewController.h; sourceTree = "<group>"; };
+		6E11EDC1207C85AA0058C20F /* TestHeaderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestHeaderViewController.m; sourceTree = "<group>"; };
 		6E2932C42022F9D40096BF07 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		6E2932C52022F9D40096BF07 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		6E2932C8202858040096BF07 /* YYKitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYKitViewController.h; sourceTree = "<group>"; };
@@ -129,6 +132,8 @@
 			children = (
 				6E2932C42022F9D40096BF07 /* TestViewController.h */,
 				6E2932C52022F9D40096BF07 /* TestViewController.m */,
+				6E11EDC0207C85AA0058C20F /* TestHeaderViewController.h */,
+				6E11EDC1207C85AA0058C20F /* TestHeaderViewController.m */,
 				6EF2A0E1206A4FE000C37FF7 /* NSArray+AvoidCrash.m */,
 			);
 			path = Test;
@@ -428,6 +433,7 @@
 				6E4B049B1FD6A46D006B25E6 /* ZZQRCodeViewController.m in Sources */,
 				6E4B049A1FD6A46D006B25E6 /* ZZQRCodeScanningView.m in Sources */,
 				6E4B04971FD6A46D006B25E6 /* ZZQRCodeFinallyViewController.m in Sources */,
+				6E11EDC2207C85AA0058C20F /* TestHeaderViewController.m in Sources */,
 				6EAB31E320721AE0009A7EC4 /* YYKitModel.m in Sources */,
 				6EF5150C1FEB7D4C00860625 /* TotalPriceExpensesViewController.m in Sources */,
 				6ED8C5461FF095110072A6DA /* CollectionHeaderReusableView.m in Sources */,

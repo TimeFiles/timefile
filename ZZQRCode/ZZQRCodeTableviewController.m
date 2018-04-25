@@ -14,6 +14,7 @@
 #import "TestViewController.h"
 #import "YYKitViewController.h"
 #import "MasonryViewController.h"
+#import "TestHeaderViewController.h"
 
 @interface ZZQRCodeTableviewController ()
 <
@@ -36,7 +37,7 @@ UITableViewDataSource
     [self.view addSubview:self.tableView];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.dateArr = [NSMutableArray arrayWithObjects:@"点击进入到扫一扫",@"输入文字或图片生成二维码",@"NSTimer(验证码倒计时)",@"GCD(验证码倒计时)",@"TotalPriceExpenses(费用明细)",@"test",@"YYKit",@"Masonry", nil];
+    self.dateArr = [NSMutableArray arrayWithObjects:@"点击进入到扫一扫",@"输入文字或图片生成二维码",@"NSTimer(验证码倒计时)",@"GCD(验证码倒计时)",@"TotalPriceExpenses(费用明细)",@"test",@"YYKit",@"Masonry",@"testHeader", nil];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
 }
 
@@ -146,9 +147,10 @@ UITableViewDataSource
     }else if (indexPath.row == 7) {
         MasonryViewController *next = [[MasonryViewController alloc] init];
         [self.navigationController pushViewController:next animated:YES];
+    }else if (indexPath.row == 8) {
+        TestHeaderViewController *next = [[TestHeaderViewController alloc] init];
+        [self.navigationController pushViewController:next animated:YES];
     }
-    
-    
     
 }
 
