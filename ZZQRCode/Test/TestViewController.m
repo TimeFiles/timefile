@@ -13,8 +13,9 @@ typedef NS_ENUM(NSInteger, sex) {
     woman
 };
 
-@interface TestViewController ()
+@interface TestViewController ()<NSCopying>
 
+@property (nonatomic, copy) NSString *name;
 
 @end
 
@@ -26,6 +27,12 @@ typedef NS_ENUM(NSInteger, sex) {
     NSLog(@"viewWillAppear");
 }
 
+- (id)copyWithZone:(NSZone *)zone {
+    
+    TestViewController *testCopy = [[self class] allocWithZone:nil];
+    
+    return testCopy;
+}
 - (void)viewDidAppear:(BOOL)animated {
     
     [super viewDidAppear:animated];
@@ -54,6 +61,20 @@ typedef NS_ENUM(NSInteger, sex) {
 
     //测试归档
 //    [self testNSSearchPath];
+    
+    
+    //runtime 交换方法
+    [self runtime];
+    
+    
+    
+}
+
+- (void)runtime {
+    
+    UIImage *image = [UIImage imageNamed:@"Home_diamond"];
+    
+    
 }
 
 - (void)testThread {
