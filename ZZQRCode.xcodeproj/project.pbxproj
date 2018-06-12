@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E08EDE220CF622500425699 /* starViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E08EDE120CF622500425699 /* starViewController.m */; };
+		6E08EDE520CF63D300425699 /* starVeiw.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E08EDE420CF63D300425699 /* starVeiw.m */; };
+		6E08EDEC20CF684D00425699 /* starCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E08EDEA20CF684D00425699 /* starCollectionViewCell.m */; };
+		6E08EDED20CF684D00425699 /* starCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E08EDEB20CF684D00425699 /* starCollectionViewCell.xib */; };
+		6E08EDF020CF721F00425699 /* starModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E08EDEF20CF721F00425699 /* starModel.m */; };
 		6E11EDC2207C85AA0058C20F /* TestHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E11EDC1207C85AA0058C20F /* TestHeaderViewController.m */; };
 		6E2932C62022F9D40096BF07 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2932C52022F9D40096BF07 /* TestViewController.m */; };
 		6E2932CA202858040096BF07 /* YYKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2932C9202858040096BF07 /* YYKitViewController.m */; };
@@ -44,6 +49,15 @@
 
 /* Begin PBXFileReference section */
 		488408704454AD8829F7D9B5 /* Pods-ZZQRCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZQRCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZZQRCode/Pods-ZZQRCode.debug.xcconfig"; sourceTree = "<group>"; };
+		6E08EDE020CF622500425699 /* starViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = starViewController.h; sourceTree = "<group>"; };
+		6E08EDE120CF622500425699 /* starViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = starViewController.m; sourceTree = "<group>"; };
+		6E08EDE320CF63D300425699 /* starVeiw.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = starVeiw.h; sourceTree = "<group>"; };
+		6E08EDE420CF63D300425699 /* starVeiw.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = starVeiw.m; sourceTree = "<group>"; };
+		6E08EDE920CF684D00425699 /* starCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = starCollectionViewCell.h; sourceTree = "<group>"; };
+		6E08EDEA20CF684D00425699 /* starCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = starCollectionViewCell.m; sourceTree = "<group>"; };
+		6E08EDEB20CF684D00425699 /* starCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = starCollectionViewCell.xib; sourceTree = "<group>"; };
+		6E08EDEE20CF721F00425699 /* starModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = starModel.h; sourceTree = "<group>"; };
+		6E08EDEF20CF721F00425699 /* starModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = starModel.m; sourceTree = "<group>"; };
 		6E11EDC0207C85AA0058C20F /* TestHeaderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestHeaderViewController.h; sourceTree = "<group>"; };
 		6E11EDC1207C85AA0058C20F /* TestHeaderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestHeaderViewController.m; sourceTree = "<group>"; };
 		6E2932C42022F9D40096BF07 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
@@ -127,6 +141,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6E08EDDF20CF621700425699 /* STAR */ = {
+			isa = PBXGroup;
+			children = (
+				6E08EDE020CF622500425699 /* starViewController.h */,
+				6E08EDE120CF622500425699 /* starViewController.m */,
+				6E08EDE320CF63D300425699 /* starVeiw.h */,
+				6E08EDE420CF63D300425699 /* starVeiw.m */,
+				6E08EDEE20CF721F00425699 /* starModel.h */,
+				6E08EDEF20CF721F00425699 /* starModel.m */,
+				6E08EDE920CF684D00425699 /* starCollectionViewCell.h */,
+				6E08EDEA20CF684D00425699 /* starCollectionViewCell.m */,
+				6E08EDEB20CF684D00425699 /* starCollectionViewCell.xib */,
+			);
+			path = STAR;
+			sourceTree = "<group>";
+		};
 		6E2932C32022F9BF0096BF07 /* Test */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +211,7 @@
 				6E389CF41F384D90008D0762 /* AppDelegate.m */,
 				6EFD5BA21F611F8A00FA20CE /* ZZQRCodeTableviewController.h */,
 				6EFD5BA31F611F8A00FA20CE /* ZZQRCodeTableviewController.m */,
+				6E08EDDF20CF621700425699 /* STAR */,
 				6EFBF0D7207468DF001C8B7A /* masonry */,
 				6E2932C7202857F90096BF07 /* YYKit */,
 				6E2932C32022F9BF0096BF07 /* Test */,
@@ -348,6 +379,7 @@
 				6E389D001F384D90008D0762 /* LaunchScreen.storyboard in Resources */,
 				6E389CFD1F384D90008D0762 /* Assets.xcassets in Resources */,
 				6EAB31DD20721348009A7EC4 /* YYKitTableViewCell.xib in Resources */,
+				6E08EDED20CF684D00425699 /* starCollectionViewCell.xib in Resources */,
 				6E5510351F38584800CC0543 /* sound.caf in Resources */,
 				6E389CFB1F384D90008D0762 /* Main.storyboard in Resources */,
 				6E84D5ED1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.xib in Resources */,
@@ -399,9 +431,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZZQRCode/Pods-ZZQRCode-frameworks.sh",
+				"${PODS_ROOT}/Reveal-SDK/RevealServer-4/iOS/RevealServer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealServer.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -415,9 +450,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E08EDE520CF63D300425699 /* starVeiw.m in Sources */,
+				6E08EDF020CF721F00425699 /* starModel.m in Sources */,
 				6E2932CA202858040096BF07 /* YYKitViewController.m in Sources */,
 				6E7C0D991FE911CA0097B587 /* GCDTool.m in Sources */,
 				6EFBF0DA207468FB001C8B7A /* MasonryViewController.m in Sources */,
+				6E08EDEC20CF684D00425699 /* starCollectionViewCell.m in Sources */,
 				6E389CF51F384D90008D0762 /* AppDelegate.m in Sources */,
 				6E389CF21F384D90008D0762 /* main.m in Sources */,
 				6E4B04981FD6A46D006B25E6 /* ZZQRCodeImageViewController.m in Sources */,
@@ -429,6 +467,7 @@
 				6E2932C62022F9D40096BF07 /* TestViewController.m in Sources */,
 				6E84D5EC1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.m in Sources */,
 				6E4B049E1FD6A482006B25E6 /* NSTimerViewController.m in Sources */,
+				6E08EDE220CF622500425699 /* starViewController.m in Sources */,
 				6E4B04991FD6A46D006B25E6 /* ZZQRCodeManager.m in Sources */,
 				6E4B049B1FD6A46D006B25E6 /* ZZQRCodeViewController.m in Sources */,
 				6E4B049A1FD6A46D006B25E6 /* ZZQRCodeScanningView.m in Sources */,
