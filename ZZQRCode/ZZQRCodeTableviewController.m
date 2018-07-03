@@ -142,7 +142,8 @@ UITableViewDataSource
         [self.navigationController pushViewController:next animated:YES];
     }else if (indexPath.row == 5) {
         TestViewController *next = [[TestViewController alloc] init];
-        [self.navigationController pushViewController:next animated:YES];
+//        [self.navigationController pushViewController:next animated:YES];
+        [self presentViewController:next animated:YES completion:nil];
     }else if (indexPath.row == 6) {
         YYKitViewController *next = [[YYKitViewController alloc] init];
         [self.navigationController pushViewController:next animated:YES];
