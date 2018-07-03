@@ -72,7 +72,16 @@ typedef NS_ENUM(NSInteger, sex) {
 
 - (void)runtime {
     
-    UIImage *image = [UIImage imageNamed:@"Home_diamond"];
+    //网络请求
+    NSString *urlString = @"www.baidu.com";
+    urlString = [urlString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+    NSString *urlString1 = [urlString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet whitespaceCharacterSet]];
+    NSURL *url1 = [NSURL URLWithString:urlString1];
+    NSLog(@"url1--1:%@",url1);
+    
+    NSString *urlString2 = [urlString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    NSURL *url2 = [NSURL URLWithString:urlString2];
+    NSLog(@"url2--2:%@",url2);
     
     
 }
