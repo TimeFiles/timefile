@@ -11,4 +11,5 @@ pod 'IQKeyboardManager'
 pod 'FSCalendar'
 pod 'MJExtension'
 pod 'Reveal-SDK', :git => 'https://git.coding.net/kakukeme/Reveal-SDK.git', :configurations => ['Debug']
+pod 'AFNetworking'
 end
