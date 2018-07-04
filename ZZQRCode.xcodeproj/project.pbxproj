@@ -36,6 +36,7 @@
 		6EAB31DC20721348009A7EC4 /* YYKitTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAB31DA20721347009A7EC4 /* YYKitTableViewCell.m */; };
 		6EAB31DD20721348009A7EC4 /* YYKitTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EAB31DB20721347009A7EC4 /* YYKitTableViewCell.xib */; };
 		6EAB31E320721AE0009A7EC4 /* YYKitModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAB31E220721AE0009A7EC4 /* YYKitModel.m */; };
+		6EB7533120EC8616004C230C /* GGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB7533020EC8616004C230C /* GGLViewController.m */; };
 		6ED8C5461FF095110072A6DA /* CollectionHeaderReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED8C5451FF095110072A6DA /* CollectionHeaderReusableView.m */; };
 		6ED8C5491FF099A00072A6DA /* PriceExpensesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED8C5481FF099A00072A6DA /* PriceExpensesModel.m */; };
 		6EF2A0E2206A4FE000C37FF7 /* NSArray+AvoidCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF2A0E1206A4FE000C37FF7 /* NSArray+AvoidCrash.m */; };
@@ -101,6 +102,8 @@
 		6EAB31DB20721347009A7EC4 /* YYKitTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYKitTableViewCell.xib; sourceTree = "<group>"; };
 		6EAB31E120721AE0009A7EC4 /* YYKitModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYKitModel.h; sourceTree = "<group>"; };
 		6EAB31E220721AE0009A7EC4 /* YYKitModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYKitModel.m; sourceTree = "<group>"; };
+		6EB7532F20EC8616004C230C /* GGLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GGLViewController.h; sourceTree = "<group>"; };
+		6EB7533020EC8616004C230C /* GGLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGLViewController.m; sourceTree = "<group>"; };
 		6ED8C5441FF095110072A6DA /* CollectionHeaderReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionHeaderReusableView.h; sourceTree = "<group>"; };
 		6ED8C5451FF095110072A6DA /* CollectionHeaderReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionHeaderReusableView.m; sourceTree = "<group>"; };
 		6ED8C5471FF099A00072A6DA /* PriceExpensesModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PriceExpensesModel.h; sourceTree = "<group>"; };
@@ -211,6 +214,7 @@
 				6E389CF41F384D90008D0762 /* AppDelegate.m */,
 				6EFD5BA21F611F8A00FA20CE /* ZZQRCodeTableviewController.h */,
 				6EFD5BA31F611F8A00FA20CE /* ZZQRCodeTableviewController.m */,
+				6EB7532E20EC8609004C230C /* GGL */,
 				6E08EDDF20CF621700425699 /* STAR */,
 				6EFBF0D7207468DF001C8B7A /* masonry */,
 				6E2932C7202857F90096BF07 /* YYKit */,
@@ -274,6 +278,15 @@
 				6E7C0D981FE911CA0097B587 /* GCDTool.m */,
 			);
 			path = GCD;
+			sourceTree = "<group>";
+		};
+		6EB7532E20EC8609004C230C /* GGL */ = {
+			isa = PBXGroup;
+			children = (
+				6EB7532F20EC8616004C230C /* GGLViewController.h */,
+				6EB7533020EC8616004C230C /* GGLViewController.m */,
+			);
+			path = GGL;
 			sourceTree = "<group>";
 		};
 		6EF515091FEB7D3600860625 /* TotalPriceExpenses */ = {
@@ -465,6 +478,7 @@
 				6EAB31DC20721348009A7EC4 /* YYKitTableViewCell.m in Sources */,
 				6E7C0D961FE9104C0097B587 /* GCDViewController.m in Sources */,
 				6E2932C62022F9D40096BF07 /* TestViewController.m in Sources */,
+				6EB7533120EC8616004C230C /* GGLViewController.m in Sources */,
 				6E84D5EC1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.m in Sources */,
 				6E4B049E1FD6A482006B25E6 /* NSTimerViewController.m in Sources */,
 				6E08EDE220CF622500425699 /* starViewController.m in Sources */,
