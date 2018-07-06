@@ -116,6 +116,17 @@ UITableViewDataSource
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     cell.textLabel.text = self.dateArr[indexPath.row];
+    
+    /*
+     在iOS 11.0之后, 可以在 Assets 里面设置 New color set 来设置同一公用的颜色
+     */
+    
+    if (@available(iOS 11.0, *)) {
+        cell.textLabel.textColor = [UIColor colorNamed:@"girlColor"];
+    } else {
+        // Fallback on earlier versions
+        cell.textLabel.textColor = [UIColor blackColor];
+    }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
