@@ -32,6 +32,11 @@
 		6E7C0D991FE911CA0097B587 /* GCDTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7C0D981FE911CA0097B587 /* GCDTool.m */; };
 		6E84D5EC1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E84D5EA1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.m */; };
 		6E84D5ED1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E84D5EB1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.xib */; };
+		6E99C98E20F4BB2C0072D32D /* LottieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E99C98D20F4BB2C0072D32D /* LottieViewController.m */; };
+		6E99C99620F603CC0072D32D /* loadingsss.json in Resources */ = {isa = PBXBuildFile; fileRef = 6E99C99520F603CB0072D32D /* loadingsss.json */; };
+		6E99C99820F604720072D32D /* search_file.json in Resources */ = {isa = PBXBuildFile; fileRef = 6E99C99720F604720072D32D /* search_file.json */; };
+		6E99C99A20F6E8780072D32D /* Check1.json in Resources */ = {isa = PBXBuildFile; fileRef = 6E99C99920F6E8780072D32D /* Check1.json */; };
+		6E99C99D20F6EEE40072D32D /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 6E99C99C20F6EEE40072D32D /* loading.json */; };
 		6E9E7C8C204E88DA000581E3 /* libtestku.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9E7C8B204E88DA000581E3 /* libtestku.a */; };
 		6EAB31DC20721348009A7EC4 /* YYKitTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAB31DA20721347009A7EC4 /* YYKitTableViewCell.m */; };
 		6EAB31DD20721348009A7EC4 /* YYKitTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EAB31DB20721347009A7EC4 /* YYKitTableViewCell.xib */; };
@@ -96,6 +101,13 @@
 		6E84D5E91FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TotalPriceEepensesCollectionViewCell.h; sourceTree = "<group>"; };
 		6E84D5EA1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TotalPriceEepensesCollectionViewCell.m; sourceTree = "<group>"; };
 		6E84D5EB1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalPriceEepensesCollectionViewCell.xib; sourceTree = "<group>"; };
+		6E99C98C20F4BB2C0072D32D /* LottieViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LottieViewController.h; path = ../../../../Documents/LottieViewController.h; sourceTree = "<group>"; };
+		6E99C98D20F4BB2C0072D32D /* LottieViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LottieViewController.m; path = ../../../../Documents/LottieViewController.m; sourceTree = "<group>"; };
+		6E99C99520F603CB0072D32D /* loadingsss.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loadingsss.json; sourceTree = "<group>"; };
+		6E99C99720F604720072D32D /* search_file.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = search_file.json; sourceTree = "<group>"; };
+		6E99C99920F6E8780072D32D /* Check1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Check1.json; sourceTree = "<group>"; };
+		6E99C99B20F6E9270072D32D /* 16 - Checkbox.aep */ = {isa = PBXFileReference; lastKnownFileType = file; path = "16 - Checkbox.aep"; sourceTree = "<group>"; };
+		6E99C99C20F6EEE40072D32D /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		6E9E7C8B204E88DA000581E3 /* libtestku.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtestku.a; sourceTree = "<group>"; };
 		6EAB31D920721347009A7EC4 /* YYKitTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYKitTableViewCell.h; sourceTree = "<group>"; };
 		6EAB31DA20721347009A7EC4 /* YYKitTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYKitTableViewCell.m; sourceTree = "<group>"; };
@@ -214,6 +226,7 @@
 				6E389CF41F384D90008D0762 /* AppDelegate.m */,
 				6EFD5BA21F611F8A00FA20CE /* ZZQRCodeTableviewController.h */,
 				6EFD5BA31F611F8A00FA20CE /* ZZQRCodeTableviewController.m */,
+				6E99C98B20F4BB200072D32D /* lottie-ios */,
 				6EB7532E20EC8609004C230C /* GGL */,
 				6E08EDDF20CF621700425699 /* STAR */,
 				6EFBF0D7207468DF001C8B7A /* masonry */,
@@ -278,6 +291,20 @@
 				6E7C0D981FE911CA0097B587 /* GCDTool.m */,
 			);
 			path = GCD;
+			sourceTree = "<group>";
+		};
+		6E99C98B20F4BB200072D32D /* lottie-ios */ = {
+			isa = PBXGroup;
+			children = (
+				6E99C99C20F6EEE40072D32D /* loading.json */,
+				6E99C99B20F6E9270072D32D /* 16 - Checkbox.aep */,
+				6E99C99920F6E8780072D32D /* Check1.json */,
+				6E99C99720F604720072D32D /* search_file.json */,
+				6E99C99520F603CB0072D32D /* loadingsss.json */,
+				6E99C98C20F4BB2C0072D32D /* LottieViewController.h */,
+				6E99C98D20F4BB2C0072D32D /* LottieViewController.m */,
+			);
+			path = "lottie-ios";
 			sourceTree = "<group>";
 		};
 		6EB7532E20EC8609004C230C /* GGL */ = {
@@ -391,10 +418,14 @@
 			files = (
 				6E389D001F384D90008D0762 /* LaunchScreen.storyboard in Resources */,
 				6E389CFD1F384D90008D0762 /* Assets.xcassets in Resources */,
+				6E99C99A20F6E8780072D32D /* Check1.json in Resources */,
+				6E99C99620F603CC0072D32D /* loadingsss.json in Resources */,
 				6EAB31DD20721348009A7EC4 /* YYKitTableViewCell.xib in Resources */,
+				6E99C99D20F6EEE40072D32D /* loading.json in Resources */,
 				6E08EDED20CF684D00425699 /* starCollectionViewCell.xib in Resources */,
 				6E5510351F38584800CC0543 /* sound.caf in Resources */,
 				6E389CFB1F384D90008D0762 /* Main.storyboard in Resources */,
+				6E99C99820F604720072D32D /* search_file.json in Resources */,
 				6E84D5ED1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +517,7 @@
 				6E4B049B1FD6A46D006B25E6 /* ZZQRCodeViewController.m in Sources */,
 				6E4B049A1FD6A46D006B25E6 /* ZZQRCodeScanningView.m in Sources */,
 				6E4B04971FD6A46D006B25E6 /* ZZQRCodeFinallyViewController.m in Sources */,
+				6E99C98E20F4BB2C0072D32D /* LottieViewController.m in Sources */,
 				6E11EDC2207C85AA0058C20F /* TestHeaderViewController.m in Sources */,
 				6EAB31E320721AE0009A7EC4 /* YYKitModel.m in Sources */,
 				6EF5150C1FEB7D4C00860625 /* TotalPriceExpensesViewController.m in Sources */,
