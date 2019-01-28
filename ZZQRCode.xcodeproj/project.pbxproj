@@ -32,11 +32,11 @@
 		6E7C0D991FE911CA0097B587 /* GCDTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7C0D981FE911CA0097B587 /* GCDTool.m */; };
 		6E84D5EC1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E84D5EA1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.m */; };
 		6E84D5ED1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E84D5EB1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.xib */; };
-		6E99C98E20F4BB2C0072D32D /* LottieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E99C98D20F4BB2C0072D32D /* LottieViewController.m */; };
 		6E99C99620F603CC0072D32D /* loadingsss.json in Resources */ = {isa = PBXBuildFile; fileRef = 6E99C99520F603CB0072D32D /* loadingsss.json */; };
 		6E99C99820F604720072D32D /* search_file.json in Resources */ = {isa = PBXBuildFile; fileRef = 6E99C99720F604720072D32D /* search_file.json */; };
 		6E99C99A20F6E8780072D32D /* Check1.json in Resources */ = {isa = PBXBuildFile; fileRef = 6E99C99920F6E8780072D32D /* Check1.json */; };
 		6E99C99D20F6EEE40072D32D /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 6E99C99C20F6EEE40072D32D /* loading.json */; };
+		6E9D8DA721F6DF2700482BAC /* LottieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9D8DA621F6DF2700482BAC /* LottieViewController.m */; };
 		6E9E7C8C204E88DA000581E3 /* libtestku.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9E7C8B204E88DA000581E3 /* libtestku.a */; };
 		6EAB31DC20721348009A7EC4 /* YYKitTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAB31DA20721347009A7EC4 /* YYKitTableViewCell.m */; };
 		6EAB31DD20721348009A7EC4 /* YYKitTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EAB31DB20721347009A7EC4 /* YYKitTableViewCell.xib */; };
@@ -45,6 +45,7 @@
 		6ED8C5461FF095110072A6DA /* CollectionHeaderReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED8C5451FF095110072A6DA /* CollectionHeaderReusableView.m */; };
 		6ED8C5491FF099A00072A6DA /* PriceExpensesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED8C5481FF099A00072A6DA /* PriceExpensesModel.m */; };
 		6EF2A0E2206A4FE000C37FF7 /* NSArray+AvoidCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF2A0E1206A4FE000C37FF7 /* NSArray+AvoidCrash.m */; };
+		6EF2E0F421F1B940008588D9 /* ToolWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF2E0F321F1B940008588D9 /* ToolWork.m */; };
 		6EF5150C1FEB7D4C00860625 /* TotalPriceExpensesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF5150B1FEB7D4C00860625 /* TotalPriceExpensesViewController.m */; };
 		6EF5150F1FEB7F8A00860625 /* TotalPriceExpensesTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF5150E1FEB7F8A00860625 /* TotalPriceExpensesTool.m */; };
 		6EF515121FEB888900860625 /* TotalPriceExpensesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF515111FEB888900860625 /* TotalPriceExpensesModel.m */; };
@@ -101,13 +102,13 @@
 		6E84D5E91FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TotalPriceEepensesCollectionViewCell.h; sourceTree = "<group>"; };
 		6E84D5EA1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TotalPriceEepensesCollectionViewCell.m; sourceTree = "<group>"; };
 		6E84D5EB1FECEA4700EB80B1 /* TotalPriceEepensesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalPriceEepensesCollectionViewCell.xib; sourceTree = "<group>"; };
-		6E99C98C20F4BB2C0072D32D /* LottieViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LottieViewController.h; path = ../../../../Documents/LottieViewController.h; sourceTree = "<group>"; };
-		6E99C98D20F4BB2C0072D32D /* LottieViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LottieViewController.m; path = ../../../../Documents/LottieViewController.m; sourceTree = "<group>"; };
 		6E99C99520F603CB0072D32D /* loadingsss.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loadingsss.json; sourceTree = "<group>"; };
 		6E99C99720F604720072D32D /* search_file.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = search_file.json; sourceTree = "<group>"; };
 		6E99C99920F6E8780072D32D /* Check1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Check1.json; sourceTree = "<group>"; };
 		6E99C99B20F6E9270072D32D /* 16 - Checkbox.aep */ = {isa = PBXFileReference; lastKnownFileType = file; path = "16 - Checkbox.aep"; sourceTree = "<group>"; };
 		6E99C99C20F6EEE40072D32D /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		6E9D8DA521F6DF2700482BAC /* LottieViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LottieViewController.h; sourceTree = "<group>"; };
+		6E9D8DA621F6DF2700482BAC /* LottieViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LottieViewController.m; sourceTree = "<group>"; };
 		6E9E7C8B204E88DA000581E3 /* libtestku.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtestku.a; sourceTree = "<group>"; };
 		6EAB31D920721347009A7EC4 /* YYKitTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYKitTableViewCell.h; sourceTree = "<group>"; };
 		6EAB31DA20721347009A7EC4 /* YYKitTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYKitTableViewCell.m; sourceTree = "<group>"; };
@@ -121,6 +122,8 @@
 		6ED8C5471FF099A00072A6DA /* PriceExpensesModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PriceExpensesModel.h; sourceTree = "<group>"; };
 		6ED8C5481FF099A00072A6DA /* PriceExpensesModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PriceExpensesModel.m; sourceTree = "<group>"; };
 		6EF2A0E1206A4FE000C37FF7 /* NSArray+AvoidCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+AvoidCrash.m"; sourceTree = "<group>"; };
+		6EF2E0F221F1B940008588D9 /* ToolWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolWork.h; sourceTree = "<group>"; };
+		6EF2E0F321F1B940008588D9 /* ToolWork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolWork.m; sourceTree = "<group>"; };
 		6EF5150A1FEB7D4C00860625 /* TotalPriceExpensesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TotalPriceExpensesViewController.h; sourceTree = "<group>"; };
 		6EF5150B1FEB7D4C00860625 /* TotalPriceExpensesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TotalPriceExpensesViewController.m; sourceTree = "<group>"; };
 		6EF5150D1FEB7F8A00860625 /* TotalPriceExpensesTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TotalPriceExpensesTool.h; sourceTree = "<group>"; };
@@ -224,6 +227,8 @@
 			children = (
 				6E389CF31F384D90008D0762 /* AppDelegate.h */,
 				6E389CF41F384D90008D0762 /* AppDelegate.m */,
+				6EF2E0F221F1B940008588D9 /* ToolWork.h */,
+				6EF2E0F321F1B940008588D9 /* ToolWork.m */,
 				6EFD5BA21F611F8A00FA20CE /* ZZQRCodeTableviewController.h */,
 				6EFD5BA31F611F8A00FA20CE /* ZZQRCodeTableviewController.m */,
 				6E99C98B20F4BB200072D32D /* lottie-ios */,
@@ -301,8 +306,8 @@
 				6E99C99920F6E8780072D32D /* Check1.json */,
 				6E99C99720F604720072D32D /* search_file.json */,
 				6E99C99520F603CB0072D32D /* loadingsss.json */,
-				6E99C98C20F4BB2C0072D32D /* LottieViewController.h */,
-				6E99C98D20F4BB2C0072D32D /* LottieViewController.m */,
+				6E9D8DA521F6DF2700482BAC /* LottieViewController.h */,
+				6E9D8DA621F6DF2700482BAC /* LottieViewController.m */,
 			);
 			path = "lottie-ios";
 			sourceTree = "<group>";
@@ -444,7 +449,7 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -495,11 +500,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E08EDE520CF63D300425699 /* starVeiw.m in Sources */,
+				6E9D8DA721F6DF2700482BAC /* LottieViewController.m in Sources */,
 				6E08EDF020CF721F00425699 /* starModel.m in Sources */,
 				6E2932CA202858040096BF07 /* YYKitViewController.m in Sources */,
 				6E7C0D991FE911CA0097B587 /* GCDTool.m in Sources */,
 				6EFBF0DA207468FB001C8B7A /* MasonryViewController.m in Sources */,
 				6E08EDEC20CF684D00425699 /* starCollectionViewCell.m in Sources */,
+				6EF2E0F421F1B940008588D9 /* ToolWork.m in Sources */,
 				6E389CF51F384D90008D0762 /* AppDelegate.m in Sources */,
 				6E389CF21F384D90008D0762 /* main.m in Sources */,
 				6E4B04981FD6A46D006B25E6 /* ZZQRCodeImageViewController.m in Sources */,
@@ -517,7 +524,6 @@
 				6E4B049B1FD6A46D006B25E6 /* ZZQRCodeViewController.m in Sources */,
 				6E4B049A1FD6A46D006B25E6 /* ZZQRCodeScanningView.m in Sources */,
 				6E4B04971FD6A46D006B25E6 /* ZZQRCodeFinallyViewController.m in Sources */,
-				6E99C98E20F4BB2C0072D32D /* LottieViewController.m in Sources */,
 				6E11EDC2207C85AA0058C20F /* TestHeaderViewController.m in Sources */,
 				6EAB31E320721AE0009A7EC4 /* YYKitModel.m in Sources */,
 				6EF5150C1FEB7D4C00860625 /* TotalPriceExpensesViewController.m in Sources */,
@@ -657,7 +663,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZZQRCode/PrefixHeader.pch";
 				INFOPLIST_FILE = ZZQRCode/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -678,7 +684,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZZQRCode/PrefixHeader.pch";
 				INFOPLIST_FILE = ZZQRCode/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "ZZQRCodeTableviewController.h"
+//统计
+#import <CloudwiseMAgent/SmartAgent.h>
 
 @interface AppDelegate ()
 
@@ -32,6 +34,11 @@
     
     //将窗口设置为window的主窗口
     [self.window makeKeyAndVisible];
+    
+    //统计SDK
+    [[SmartAgent sharedInstance] startOnCloudWithAppKey:@"wS0n2SF8WRA6pp871oldJ083fYasJGRocN7V15sk8W7RgmrGwh6alQtEbXD0T1mJtUmF70DS4jQ!!"];
+    [[SmartAgent sharedInstance] printLog: YES];
+    
     
     return YES;
 }

@@ -39,7 +39,7 @@
     
     self.shimmeringView.contentView = self.timerLabel;
     self.shimmeringView.shimmering = YES;
-    
+
 }
 
 - (void)viewWillAppear:(BOOL)animated {
