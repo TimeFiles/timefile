@@ -13,6 +13,7 @@
 		6E08EDED20CF684D00425699 /* starCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E08EDEB20CF684D00425699 /* starCollectionViewCell.xib */; };
 		6E08EDF020CF721F00425699 /* starModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E08EDEF20CF721F00425699 /* starModel.m */; };
 		6E11EDC2207C85AA0058C20F /* TestHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E11EDC1207C85AA0058C20F /* TestHeaderViewController.m */; };
+		6E21CF0B21FED08A00CF804E /* SpeedyDesktopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E21CF0A21FED08A00CF804E /* SpeedyDesktopViewController.m */; };
 		6E2932C62022F9D40096BF07 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2932C52022F9D40096BF07 /* TestViewController.m */; };
 		6E2932CA202858040096BF07 /* YYKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2932C9202858040096BF07 /* YYKitViewController.m */; };
 		6E2932CD202859AA0096BF07 /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2932CC202859AA0096BF07 /* YYFPSLabel.m */; };
@@ -21,6 +22,7 @@
 		6E389CFB1F384D90008D0762 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E389CF91F384D90008D0762 /* Main.storyboard */; };
 		6E389CFD1F384D90008D0762 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E389CFC1F384D90008D0762 /* Assets.xcassets */; };
 		6E389D001F384D90008D0762 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E389CFE1F384D90008D0762 /* LaunchScreen.storyboard */; };
+		6E46EB89222D49AB00884127 /* LabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E46EB88222D49AB00884127 /* LabelViewController.m */; };
 		6E4B04971FD6A46D006B25E6 /* ZZQRCodeFinallyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B048D1FD6A46C006B25E6 /* ZZQRCodeFinallyViewController.m */; };
 		6E4B04981FD6A46D006B25E6 /* ZZQRCodeImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B048E1FD6A46C006B25E6 /* ZZQRCodeImageViewController.m */; };
 		6E4B04991FD6A46D006B25E6 /* ZZQRCodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B04931FD6A46C006B25E6 /* ZZQRCodeManager.m */; };
@@ -67,6 +69,8 @@
 		6E08EDEF20CF721F00425699 /* starModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = starModel.m; sourceTree = "<group>"; };
 		6E11EDC0207C85AA0058C20F /* TestHeaderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestHeaderViewController.h; sourceTree = "<group>"; };
 		6E11EDC1207C85AA0058C20F /* TestHeaderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestHeaderViewController.m; sourceTree = "<group>"; };
+		6E21CF0921FED08A00CF804E /* SpeedyDesktopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeedyDesktopViewController.h; sourceTree = "<group>"; };
+		6E21CF0A21FED08A00CF804E /* SpeedyDesktopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeedyDesktopViewController.m; sourceTree = "<group>"; };
 		6E2932C42022F9D40096BF07 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		6E2932C52022F9D40096BF07 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		6E2932C8202858040096BF07 /* YYKitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYKitViewController.h; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 		6E389CFC1F384D90008D0762 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E389CFF1F384D90008D0762 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E389D011F384D90008D0762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E46EB87222D49AB00884127 /* LabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LabelViewController.h; sourceTree = "<group>"; };
+		6E46EB88222D49AB00884127 /* LabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelViewController.m; sourceTree = "<group>"; };
 		6E4B048D1FD6A46C006B25E6 /* ZZQRCodeFinallyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQRCodeFinallyViewController.m; sourceTree = "<group>"; };
 		6E4B048E1FD6A46C006B25E6 /* ZZQRCodeImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZQRCodeImageViewController.m; sourceTree = "<group>"; };
 		6E4B048F1FD6A46C006B25E6 /* ZZQRCodeImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQRCodeImageViewController.h; sourceTree = "<group>"; };
@@ -175,6 +181,15 @@
 			path = STAR;
 			sourceTree = "<group>";
 		};
+		6E21CF0821FED07A00CF804E /* SpeedyDesktop */ = {
+			isa = PBXGroup;
+			children = (
+				6E21CF0921FED08A00CF804E /* SpeedyDesktopViewController.h */,
+				6E21CF0A21FED08A00CF804E /* SpeedyDesktopViewController.m */,
+			);
+			path = SpeedyDesktop;
+			sourceTree = "<group>";
+		};
 		6E2932C32022F9BF0096BF07 /* Test */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +246,8 @@
 				6EF2E0F321F1B940008588D9 /* ToolWork.m */,
 				6EFD5BA21F611F8A00FA20CE /* ZZQRCodeTableviewController.h */,
 				6EFD5BA31F611F8A00FA20CE /* ZZQRCodeTableviewController.m */,
+				6E46EB86222D498900884127 /* 一行半label */,
+				6E21CF0821FED07A00CF804E /* SpeedyDesktop */,
 				6E99C98B20F4BB200072D32D /* lottie-ios */,
 				6EB7532E20EC8609004C230C /* GGL */,
 				6E08EDDF20CF621700425699 /* STAR */,
@@ -260,6 +277,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6E46EB86222D498900884127 /* 一行半label */ = {
+			isa = PBXGroup;
+			children = (
+				6E46EB87222D49AB00884127 /* LabelViewController.h */,
+				6E46EB88222D49AB00884127 /* LabelViewController.m */,
+			);
+			path = "一行半label";
+			sourceTree = "<group>";
+		};
 		6E4B048B1FD6A431006B25E6 /* NSTimer */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,14 +300,14 @@
 			children = (
 				6E4B04911FD6A46C006B25E6 /* ZZQRCodeFinallyViewController.h */,
 				6E4B048D1FD6A46C006B25E6 /* ZZQRCodeFinallyViewController.m */,
-				6E4B048F1FD6A46C006B25E6 /* ZZQRCodeImageViewController.h */,
-				6E4B048E1FD6A46C006B25E6 /* ZZQRCodeImageViewController.m */,
 				6E4B04901FD6A46C006B25E6 /* ZZQRCodeManager.h */,
 				6E4B04931FD6A46C006B25E6 /* ZZQRCodeManager.m */,
 				6E4B04921FD6A46C006B25E6 /* ZZQRCodeScanningView.h */,
 				6E4B04941FD6A46C006B25E6 /* ZZQRCodeScanningView.m */,
 				6E4B04951FD6A46C006B25E6 /* ZZQRCodeViewController.h */,
 				6E4B04961FD6A46D006B25E6 /* ZZQRCodeViewController.m */,
+				6E4B048F1FD6A46C006B25E6 /* ZZQRCodeImageViewController.h */,
+				6E4B048E1FD6A46C006B25E6 /* ZZQRCodeImageViewController.m */,
 			);
 			name = ZZQRCode;
 			path = ZZQRCode/ZZQRCode;
@@ -504,6 +530,7 @@
 				6E08EDF020CF721F00425699 /* starModel.m in Sources */,
 				6E2932CA202858040096BF07 /* YYKitViewController.m in Sources */,
 				6E7C0D991FE911CA0097B587 /* GCDTool.m in Sources */,
+				6E21CF0B21FED08A00CF804E /* SpeedyDesktopViewController.m in Sources */,
 				6EFBF0DA207468FB001C8B7A /* MasonryViewController.m in Sources */,
 				6E08EDEC20CF684D00425699 /* starCollectionViewCell.m in Sources */,
 				6EF2E0F421F1B940008588D9 /* ToolWork.m in Sources */,
@@ -525,6 +552,7 @@
 				6E4B049A1FD6A46D006B25E6 /* ZZQRCodeScanningView.m in Sources */,
 				6E4B04971FD6A46D006B25E6 /* ZZQRCodeFinallyViewController.m in Sources */,
 				6E11EDC2207C85AA0058C20F /* TestHeaderViewController.m in Sources */,
+				6E46EB89222D49AB00884127 /* LabelViewController.m in Sources */,
 				6EAB31E320721AE0009A7EC4 /* YYKitModel.m in Sources */,
 				6EF5150C1FEB7D4C00860625 /* TotalPriceExpensesViewController.m in Sources */,
 				6ED8C5461FF095110072A6DA /* CollectionHeaderReusableView.m in Sources */,
@@ -663,7 +691,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZZQRCode/PrefixHeader.pch";
 				INFOPLIST_FILE = ZZQRCode/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -684,7 +712,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZZQRCode/PrefixHeader.pch";
 				INFOPLIST_FILE = ZZQRCode/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

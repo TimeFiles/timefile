@@ -65,10 +65,8 @@
     [super viewDidLoad];
     [self customNavigationBar];
     self.title = @"二维码扫描";
-    self.view.backgroundColor = [UIColor redColor];
-    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.view.backgroundColor = [UIColor clearColor];
     [self.view addSubview:self.scanningView];
-    // Do any additional setup after loading the view.
 }
 - (void)customNavigationBar {
     

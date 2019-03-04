@@ -18,11 +18,12 @@
 #import "starViewController.h"
 #import "GGLViewController.h"
 #import "LottieViewController.h"
+#import "SpeedyDesktopViewController.h"
+#import "LabelViewController.h"
 
 @interface ZZQRCodeTableviewController ()
 <
-UITableViewDelegate,
-UITableViewDataSource
+    UITableViewDelegate,UITableViewDataSource
 >
 @property (nonatomic, strong) UITableView *tableView;
 
@@ -40,7 +41,7 @@ UITableViewDataSource
     [self.view addSubview:self.tableView];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.dateArr = [NSMutableArray arrayWithObjects:@"点击进入到扫一扫",@"输入文字或图片生成二维码",@"NSTimer(验证码倒计时)",@"GCD(验证码倒计时)",@"TotalPriceExpenses(费用明细)",@"test",@"YYKit",@"Masonry",@"testHeader",@"星级封装",@"刮刮乐",@"lottie-ios",nil];
+    self.dateArr = [NSMutableArray arrayWithObjects:@"点击进入到扫一扫",@"输入文字或图片生成二维码",@"NSTimer(验证码倒计时)",@"GCD(验证码倒计时)",@"TotalPriceExpenses(费用明细)",@"test",@"YYKit",@"Masonry",@"testHeader",@"星级封装",@"刮刮乐",@"lottie-ios",@"speedyDesktop",@"一行半label",nil];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
 }
 
@@ -116,17 +117,7 @@ UITableViewDataSource
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     cell.textLabel.text = self.dateArr[indexPath.row];
-    
-    /*
-     在iOS 11.0之后, 可以在 Assets 里面设置 New color set 来设置同一公用的颜色
-     */
-    
-    if (@available(iOS 11.0, *)) {
-        cell.textLabel.textColor = [UIColor colorNamed:@"girlColor"];
-    } else {
-        // Fallback on earlier versions
-        cell.textLabel.textColor = [UIColor blackColor];
-    }
+    cell.textLabel.textColor = [UIColor blackColor];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
@@ -142,6 +133,7 @@ UITableViewDataSource
     }
     else if (indexPath.row == 1) {
         
+        [self loadLimitsAndIndexPath:indexPath.row];
     }else if (indexPath.row == 2) {
         
         NSTimerViewController *next = [[NSTimerViewController alloc] init];
@@ -174,6 +166,14 @@ UITableViewDataSource
     }else if (indexPath.row == 11) {
         LottieViewController *next = [[LottieViewController alloc] init];
         [self.navigationController pushViewController:next animated:YES];
+    }else if (indexPath.row == 12) {
+        SpeedyDesktopViewController *next = [[SpeedyDesktopViewController alloc] init];
+        [self.navigationController pushViewController:next animated:YES];
+
+    }else if (indexPath.row == 13) {
+        LabelViewController *next = [[LabelViewController alloc] init];
+        [self.navigationController pushViewController:next animated:YES];
+        
     }
 }
 

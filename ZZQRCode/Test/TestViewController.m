@@ -65,9 +65,7 @@ typedef NS_ENUM(NSInteger, sex) {
     
     //runtime 交换方法
     [self runtime];
-    
-    
-    
+        
 }
 
 - (void)runtime {

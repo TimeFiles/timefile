@@ -20,6 +20,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 0, SCREEN_WIDTH -40, SCREEN_HEIGHT -64)];
     label.text = self.titleLabelStr;
+    label.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:label];
 }
 
