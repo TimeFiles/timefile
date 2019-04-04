@@ -7,8 +7,17 @@
 //
 
 #import "SpeedyDesktopViewController.h"
+#import "HTTPServer.h"
+#import "DDLog.h"
+#import "DDTTYLogger.h"
+
+
+// Log levels: off, error, warn, info, verbose
+static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 @interface SpeedyDesktopViewController ()
+
+@property (nonatomic,strong)HTTPServer *httpServer;
 
 @end
 
@@ -17,24 +26,62 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-}
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     
-    NSString *weburl = [NSString stringWithFormat:@"www.baidu.com"];
     
-    NSDictionary *options = @{
-                              UIApplicationOpenURLOptionUniversalLinksOnly : @YES
-                              
-                              };
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:weburl] options:options completionHandler:^(BOOL success) {
-        NSLog(@"success");
+    UIButton *btn = [[UIButton alloc] init];
+    [btn setTitle:@"创建桌面快捷方式" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+       
+        make.centerX.centerY.equalTo(self.view);
     }];
+}
+
+- (void)btnClick {
     
+   
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    _httpServer = [[HTTPServer alloc] init];
+    [_httpServer setType:@"_http._tcp."];
+    NSString *webPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Web"];
+    
+    DDLogInfo(@"Setting document root: %@", webPath);
+    
+    [_httpServer setDocumentRoot:webPath];
+    
+    [self startServer];
     
     
 }
 
+- (void)startServer
+{
+    // Start the server (and check for problems)
+    
+    NSError *error;
+    if([_httpServer start:&error])
+    {
+        DDLogInfo(@"Started HTTP Server on port %hu", [_httpServer listeningPort]);
+        
+        // open the url.
+        NSString *urlStrWithPort = [NSString stringWithFormat:@"http://localhost:%d",[_httpServer listeningPort]];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlStrWithPort] options:@{} completionHandler:^(BOOL success) {
+            
+        }];
+    }
+    else
+    {
+        DDLogError(@"Error starting HTTP Server: %@", error);
+    }
+}
+
+- (void)dealloc
+{
+    // 停止服务
+    [_httpServer stop];
+}
 
 /*
 #pragma mark - Navigation

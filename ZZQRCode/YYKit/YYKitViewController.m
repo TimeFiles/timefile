@@ -157,6 +157,7 @@
     cell.titleLabel.text = self.dateArr[indexPath.row];
     [cell layoutIfNeeded];
     CGFloat height = [cell.titleLabel systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+    NSLog(@"height--:%f",height);
     self.model.cell_height = height;
     return cell;
 }

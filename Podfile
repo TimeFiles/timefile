@@ -16,4 +16,5 @@ pod 'lottie-ios'
 
 pod 'Graver'
 
+pod 'SpeedyDesktop'
 end
