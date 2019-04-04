@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - DZNEmptyDataSet (1.8.1)
   - FSCalendar (2.8.0)
   - Graver (1.0.0):
     - SDWebImage (= 4.2.1)
@@ -32,6 +33,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - DZNEmptyDataSet
   - FSCalendar
   - Graver
   - IQKeyboardManager
@@ -45,6 +47,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - DZNEmptyDataSet
     - FSCalendar
     - Graver
     - IQKeyboardManager
@@ -66,6 +69,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   FSCalendar: 3a5ed3636e2ba1b83ebebfcf0c2603105a6f5efe
   Graver: e158dbc27f50fa012b2e8a9b64b7fd4b8f3d9139
   IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
@@ -77,6 +81,6 @@ SPEC CHECKSUMS:
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 5acc7afac93246fe9a8c7ad2601b30e8d0ab8dc1
+PODFILE CHECKSUM: ffedb9e31f271ecc38f7b9d4b56f34953a3ed13d
 
 COCOAPODS: 1.5.3

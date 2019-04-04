@@ -14,7 +14,12 @@ pod 'Reveal-SDK', :git => 'https://git.coding.net/kakukeme/Reveal-SDK.git', :con
 pod 'AFNetworking'
 pod 'lottie-ios'
 
+
 pod 'Graver'
 
+#设置桌面图标
 pod 'SpeedyDesktop'
+
+#设置tableview和collectionview无数据的展位视图
+pod 'DZNEmptyDataSet'
 end
